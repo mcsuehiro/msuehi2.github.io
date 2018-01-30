@@ -1,0 +1,319 @@
+
+
+
+h1, h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 4em;
+	font-weight: 700;
+    margin: 10px auto;
+}
+
+h4 {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	color: #B2B2B2;
+	text-transform: uppercase;
+}
+
+.main-nav {
+    height: 100px;
+    margin-right: 5%;
+    float: right;
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav li {
+	margin: 30px 20px 30px 20px;
+    display: inline-block;
+}
+
+.main-nav a {
+	text-decoration: none;
+    height: 70px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*----------- Homepage -----------*/
+
+
+.hero {
+	height: 100vh;
+	background-color: #f8f8f8;
+	background-image: url("../images/aurora@3x.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position; 
+}
+
+.hero-intro {
+	display: inline-block;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.hero-intro {
+	display: inline-block;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.opacity {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(to top, #ffffff, rgba(250, 250, 250, 0.0));
+}
+
+.project {
+	margin-top: 300px;
+/*- height: 500px; -*/
+}
+
+.project a {
+	text-decoration: none;
+}
+
+.project .row {
+    height: 300px;
+}
+
+.line {
+    height: 245px;
+    width: 2px;
+    margin-left: 5% !important;
+    background-color: lavender;
+}
+
+@media only screen and (max-width: 719px) {
+	.line {
+		display: none;
+	}
+}
+
+.project-info {
+	position: relative;
+	
+}
+
+.left-border {
+	border-left: 2px solid lavender;
+	padding-left: 30px; 
+	height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+	.left-border {
+		border: none;
+	}
+}
+
+.project-img img{
+	width: 100%;
+	min-width: 200px;
+	height: auto;
+	background-size: cover;
+}
+
+#oranj {
+	background-image: url("../images/splash01.png");
+	background-repeat: no-repeat; 
+	background-size: contain;
+	background-position: 50% 50%; 
+}
+
+#oranj:hover h2 {color: pink; }
+
+
+#splash {
+    background-image: url("../images/splash01.png");
+    background-repeat: no-repeat;  
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 90%;
+    top: -7%;
+    left: 20%;
+}
+
+#RentApp:hover h2 {color: pink; }
+
+/*----- mobile -----*/
+
+@media only screen and (max-width: 480px) {
+    #splash {
+		height: 60%;
+		width: 100%;
+		top: 55%;
+		left: 0%;
+	}
+}
+
+
+
+/*----------- pink background/red text---
+
+.project-title a {
+  background: linear-gradient(to right, #fff 50%, rgba(255, 0, 0, 0.2) 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #33347;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-position 0.3s ease-out;
+}
+.project-title a:hover {
+  background-position: -99.99% 0;
+  color: red;
+}
+-------*/
+/*----------- Case Study -----------*/
+
+.case-main h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.8rem;
+}
+
+.case-hero {
+	width: 100%;
+	height: 700px;
+	background-color: #fff;
+	background-size: cover;
+}
+
+.case-title-box {
+	padding: 70px 20px 0px 20px;
+}
+
+.case-title {
+	text-align: center;
+}
+
+.hero-box {
+	margin: 5% auto 0;
+	width: 75%;
+	background-image: url("../images/splash01.png");
+	background-repeat: no-repeat; 
+	background-size: contain;
+	background-position: 50% 50%; 
+}
+
+.hero-box:after {
+	width: 90%;
+    margin: 4% auto 0px;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.case-about {
+    float: left;
+    width: 40%;
+    min-width: 300px;
+}
+
+.case-about h4 {
+	margin: 0;
+}
+
+.case-about p {
+	margin-top: 2%;
+	font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #4A4A4A;
+}
+
+.case-hero img {
+	float: right;
+    width: 65%;
+    max-width: 500px;
+}
+
+.case-hero:after {
+	content: "";
+    clear: both;
+    display: table;
+}
+
+.intro {
+	clear: both;
+	margin: 0 auto 20px;
+	padding: 30px 0;
+	background-color: #f8f8f8;
+}
+
+.intro .container p {
+	padding-top: 20px;
+	font-size: 1.3rem;
+	margin: 0 auto;
+}
+
+.wireframes img {
+    width: 100%;
+    height: 300px;
+}
+
+.center-image {
+	text-align: center;
+}
+
+/*----- mobile 1111 ------*/
+
+@media only screen and (max-width: 1111px) {
+
+    .case-hero img {
+    	width: 85%;
+    	display: block;
+    	float: none;
+    	margin: 0 auto;
+	}
+
+    .case-hero .left-border {
+		width: 100%;
+    	margin: auto;
+    	padding-left: 0%;
+    	font-size: 0.85rem;
+    	border: none;
+	}
+	
+	.case-about {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.hero-box {
+	background-position: 50% 10%; 
+	}
+}
+
+
+.testimg img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*--------------------*/
+
+/*----------- Oranj -----------*/
+
+
+
+/*----------- Slant (case study) --------
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 80%);
+	clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 80%);
+
+	-----------*/
