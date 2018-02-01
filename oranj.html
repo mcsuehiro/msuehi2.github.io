@@ -32,7 +32,7 @@
 	<header class="main-nav">
 	</header>
 
-  <div class="case-hero">
+  <div class="case-hero" >
 
       <div class="case-title-box center">
         <h1 class="case-title">Oranj</h1>
@@ -42,7 +42,7 @@
       <div class="hero-box">
           <img src="images/oranj-detailed.png" alt="Oranj">
           <div class="case-about">
-            <div class="left-border">
+            <div class="left-border pink">
               <h4>ABOUT</h4>
               <p>Oranj is a wealth management tool used by financial advisors and their clients as a platform to help their clients reach their financial goals. Through this platform, clients set up and manage their investments</p>
             </div>
@@ -50,6 +50,7 @@
       </div>
   </div>  
 
+  <!-- Intro Bar-->
   <div class="intro">
     <div class="container">
       <div class="row">
@@ -71,10 +72,9 @@
     </div>
   </div>
 
+<main>
+  <div class="container">
 
-  <div class="container case-main">
-
-    <div class="content">
       <div class="row">
         <div class="col-1 hidden sm"></div>
         <div class="col-10">
@@ -83,55 +83,382 @@
         </div>
         <div class="col-1 hidden sm"></div>
       </div>
+
+    <div class="center">
+      <h3>My Design Process</h3>
+      <img src="images/design-process.png" style="width: 600px;">
     </div>
 
-    <div class="wireframes">
-      <img src="images/img1.png">
-    </div>
-
+  <!--The Challenge-->
     <div class="row">
       <div class="col-1 hidden sm"></div>
       <div class="col-10">
         <h2>The Challenge</h2>
-        <p>Oranj is introduced when financial advisors sign a new client. The first major task that the client completes is opening an investment account by filling out a form. This form requires the client to fill out important sensitive financial details, which tells the advisor how to plan the client’s financial strategy. Given the importance of this form, our goal was to help clients feel comfortable filling out the account form through transparency and trust.<br><br>After discussion with the Oranj team, we decided to focus our efforts over the next few sprints primarily on optimizing the client side grow a larger client base for the advisors, which would increase revenue for Oranj.</p>
+        <p>Oranj is introduced when financial advisors sign a new client. The first major task that the client completes is opening an investment account by filling out a form. This form requires the client to fill out important sensitive financial details, which tells the advisor how to plan the client’s financial strategy. Given the importance of this form, our goal was to help clients feel comfortable filling out the account form through transparency and trust.
+        <br><br>
+        After discussion with the Oranj team, we decided to focus our efforts over the next few sprints primarily on optimizing the client side grow a larger client base for the advisors, which would increase revenue for Oranj.</p>
       </div>
       <div class="col-1 hidden sm"></div>
     </div>
-
+  <!-- Surveying the Landscape-->
     <div class="row">
       <div class="col-1 hidden sm"></div>
       <div class="col-10">
         <h2>Surveying the Landscape</h2>
         <p>I started out this project by familiarizing myself with the financial management domain and creating a landscape review of the financial industry to understand where Oranj sits in the competitive market.</p>
-        <div class="center-image">
+        <div class="center">
           <img src="images/advisor-infographic.png" alt="" style="width:300px;">
         </div>
+        <p>From our research, we found that there are two major options in the financial advising market: Traditional Advisors and Robo Advisors. While robo advisors offer accessibility and convenience through automation, traditional advisors offer a more personalized and holistic service with a real person who will take the time to get to know you.
+        <br><br>
+        Given that Oranj is a tool used between in-person advisor and their clients, the key opportunity for Oranj is to maintain that advisor-client relationship of trust and communication on an online platform, while also providing clients the convenience and accessibility to check their accounts anytime.</p>        
+      </div>
+      <div class="col-1 hidden sm"></div>
+    </div>
+  </div><!--endcontainer-->
+
+
+  <!--start gray-background-->
+  <div class="background" style="background: #f8f8f8;">
+    <div class="container">
+  <!--Research and Define-->
+      <div class="row">
+        <div class="col-1 hidden sm"></div>
+        <div class="col-10">
+          <h2>Research and Define</h2>
+          <p>In order to evaluate the current state of the product’s overall usability, we conducted heuristic evaluations independently and then collectively discussed our findings to prioritize key usability issues to address:</p>
+         </div> 
+        <div class="col-1 hidden sm"></div>
+      </div>
+
+      <div class="row" id="oranj-heuristic">
+        <div class="col-1 hidden sm"></div>
+        <div class="col-6">
+          <div class="problem">
+            <img src="images/problem-icon.png" alt="problem-icon" style="width:20px; display:">
+            <h4>Problem #1</h4>
+          </div>
+          <p><b>Lack of error prevention</b><br>
+          There was no confirmation to check with the user before officially submitting form</p>
+        </div>
+        <div class="col-4 center">
+          <img src="images/oranj-heuristic1.png" alt="oranj-heuristic1" class="round shadow" style="width:200px;">
+        </div>
+        <div class="col-1 hidden sm"></div>
+      </div>
+      <div class="row" id="oranj-heuristic">
+        <div class="col-1 hidden sm"></div>
+        <div class="col-6">
+          <div class="problem">
+            <img src="images/problem-icon.png" alt="problem-icon" style="width:20px; display:">
+            <h4>Problem #2</h4>
+          </div>
+          <p><b>Lack of visibility of system status</b><br>
+          Long pages of content coupled with unlabeled progress bar made it difficult for users to know where they were in the page and within the overall form process.</p>
+        </div>
+        <div class="col-4 center">
+          <img src="images/oranj-heuristic2.png" alt="oranj-heuristic2" class="round shadow" style="width:200px;">
+        </div>
+        <div class="col-1 hidden sm"></div>
+      </div>
+
+      <div class="row" id="oranj-heuristic">
+        <div class="col-1 hidden sm"></div>
+        <div class="col-6">
+          <div class="problem">
+            <img src="images/problem-icon.png" alt="problem-icon" style="width:20px; display:">
+            <h4>Problem #3</h4>
+          </div>
+          <p><b>Inflexible and inefficient use</b><br>
+          The entire form must be completed in one sitting and did not allow the user to save progress and return at a later time</p>
+        </div>
+        <div class="col-4 center">
+          <img src="images/oranj-heuristic3.png" alt="oranj-heuristic3" class="round shadow" style="width:200px;">
+        </div>
+        <div class="col-1 hidden sm"></div>
+      </div>
+
+      <div class="row" id="oranj-heuristic">
+        <div class="col-1 hidden sm"></div>
+        <div class="col-6">
+          <div class="problem">
+            <img src="images/problem-icon.png" alt="problem-icon" style="width:20px; display:">
+            <h4>Problem #4</h4>
+          </div>
+          <p><b>Incongruent layout</b><br>
+          The form lacked visual structure and the categorization of questions was unclear.</p>
+        </div>
+        <div class="col-4 center">
+          <img src="images/oranj-heuristic4.png" alt="oranj-heuristic4" class="round shadow" style="width:200px;">
+        </div>
+        <div class="col-1 hidden sm"></div>
+      </div>
+
+    </div><!--endcontainer-->
+  <!--end gray-background-->
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-10">
+        <p>In addition to examining the product through heuristic evaluation we also conducted usability tests with potential/target users to give us direct input on how real users interact with the product.<br><br>
+        We then created an affinity diagram to look at any recurring trends and draw insights that would show us where we need to focus our efforts; Here are my main insights from our usability testing:</p>
+      </div>
+      <div class="col-1 hidden sm"></div>
+    </div>
+    <h3 style="text-align:center;">key insights</h3>
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-1 hidden sm">
+        <img src="images/lightbulb.svg" alt="" style="margin-top:30px; width: 100%;">
+      </div>
+      <div class="col-9">
+        <p><b>Form Structure</b><br>
+        Users had to ‘switch’ their mental models for different types of questions that were asked because questions were not organized by any structure</p>
+      </div>
+      <div class="col-1 hidden sm"></div>
+    </div>
+
+  <!--key insights-->
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-1 hidden sm">
+        <img src="images/lightbulb.svg" alt="" style="margin-top:30px; width: 100%;">
+      </div>
+      <div class="col-9">
+        <p><b>Form Structure</b><br>
+        Users had to ‘switch’ their mental models for different types of questions that were asked because questions were not organized by any structure</p>
       </div>
       <div class="col-1 hidden sm"></div>
     </div>
 
     <div class="row">
-      <div class="col-7">
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.</p>
+      <div class="col-1 hidden sm"></div>
+      <div class="col-1 hidden sm">
+        <img src="images/lightbulb.svg" alt="" style="margin-top:30px; width: 100%;">
       </div>
-      <div class="col-5" style="background: pink; height: 300px;">
+      <div class="col-9">
+        <p><b>Form Structure</b><br>
+        Users had to ‘switch’ their mental models for different types of questions that were asked because questions were not organized by any structure</p>
       </div>
+      <div class="col-1 hidden sm"></div>
     </div>
 
-    <div class="row testimg">
-      <div class="col-7">
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-1 hidden sm">
+        <img src="images/lightbulb.svg" alt="" style="margin-top:30px; width: 100%;">
       </div>
-      <div class="col-5">
-        <img src="images/before-modals.png" alt="">
+      <div class="col-9">
+        <p><b>Form Structure</b><br>
+        Users had to ‘switch’ their mental models for different types of questions that were asked because questions were not organized by any structure</p>
       </div>
+      <div class="col-1 hidden sm"></div>
     </div>
 
+  <!--Understanding our Users-->
 
-  </div>    
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-10">
+        <h2>Understanding our users</h2>
+        <p>From Oranj, we learned about our target user demographic.Aside from usability testing, we conducted user interviews to understand our user’s goals, motivations, and their relationship with advisors.  From this we understood that users generally lack financial understanding, so they look for guidance and throughout the process.
+        <br><br>
+        We also conducted some subject matter expert interviews with financial advisors to further understand process of onboarding a client, and client engagement level, and understand the pattern of communication between advisor and client. </p>
+        <div class="center">
+          <img src="images/oranj-persona.png" alt="oranj-persona" style="width:300px;">          
+        </div>
+        <p>From the interviews, I also created a journey map to help me and the Oranj team empathize with our users through their process in a visual way.
+        </p>
+        <div class="center">
+          <img src="images/oranj-journeymap.png" alt="oranj-journeymap" style="width:600px;">
+        </div>
+        <p>Using the results from the heuristic evaluation, user interviews, usability testing, we defined the core problem of the user’s experience with Oranj:</p>
+        <div class="left-border big-quote">
+          Providing financial information can be mentally draining and error prone, thus users need a system they can trust to fill out easily and confidently.
+        </div>
+      </div>
+      <div class="col-1 hidden sm"></div>
+    </div>
+  </div><!--endcontainer-->
 
-  <div class="wireframes"><img src="images/img1.png"></div>
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--start gray-background-->
+  <div class="background" style="background: #f8f8f8;">
+
+  <!--Design Guidelines-->
+    <div class="container">
+      <div class="row">
+        <div class="col-1 hidden sm"></div>
+        <div class="col-10">
+          <h2>Design Guidelines</h2>
+          <p>As a way to integrate user insights into an actionable part of our process, we established design principles to help us guide our designs with the user in mind:</p>
+         </div> 
+        <div class="col-1 hidden sm"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-1 hidden sm"></div>        
+        <div class="col-2 center">
+          <img src="images/oranj-guideline1.png" alt="oranj-guideline1" style="width: 55px; margin-top: 18px;">
+        </div>
+        <div class="col-8">
+          <p><b>Explain any jargon</b><br>
+          Clarify the financial terms in a way that any user can understand.</p>
+        </div>
+        <div class="col-1 hidden sm"></div>
+    </div>
+
+      <div class="row">
+        <div class="col-1 hidden sm"></div>        
+        <div class="col-2 center">
+          <img src="images/oranj-guideline2.png" alt="oranj-guideline2" style="width: 55px; margin-top: 18px;">
+        </div>
+        <div class="col-8">
+          <p><b>Build trust</b><br>
+          The form requires sensitive and personal information, thus it's important to assure the user that their information is taken seriously.</p>
+        </div>
+        <div class="col-1 hidden sm"></div>
+    </div>
+
+      <div class="row">
+        <div class="col-1 hidden sm"></div>        
+        <div class="col-2 center">
+          <img src="images/oranj-guideline3.png" alt="oranj-guideline3" style="width: 55px; margin-top: 18px;">
+        </div>
+        <div class="col-8">
+          <p><b>Illuminate a path</b><br>
+          Guide the user throughout the process and allow them to reach out for help if they get stuck.</p>
+        </div>
+        <div class="col-1 hidden sm"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-1 hidden sm"></div>        
+      <div class="col-2 center">
+        <img src="images/oranj-guideline4.png" alt="oranj-guideline4" style="width: 55px; margin-top: 18px;">
+      </div>
+      <div class="col-8">
+        <p><b>Minimize pain</b><br>
+        No one likes filling out forms; make the process simple and don’t bombard the user with extraneous information.</p>
+      </div>
+      <div class="col-1 hidden sm"></div>
+    </div>
+
+  </div>
+</div><!--endcontainer-->
+  <!--end gray-background-->
+
+ <!--Brainstorm/Ideate-->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-1 hidden sm"></div>
+        <div class="col-10">
+          <h2>Brainstorm/Ideate</h2>
+          <p>With our problem statement and design principles in mind, my team and I diverged to individually come up with solutions. I delved into web form design research to understand web form best practices and looked at a multitude of financial platforms. Here are some of my insights:</p>
+         </div> 
+        <div class="col-1 hidden sm"></div>
+      </div>
+
+      <div class="row" id="oranj-ideate">
+
+        <div class="col-4">
+          <div class="center">
+            <img src="images/oranj-ideate1.png" class="round shadow" alt="ideate2" style="width:250px">
+          </div>
+          <p><b>Prepare the user</b><br>
+          Let users know up front what materials they will need to complete the form</p>
+        </div>
+
+        <div class="col-4">
+          <div class="center">
+            <img src="images/oranj-ideate2.png" class="round shadow" alt="ideate2" style="width:250px">
+          </div>
+          <p><b>Educate the user</b><br>
+          Teach the user what they need to know to be able to answer confidently</p>
+        </div>
+
+        <div class="col-4">
+          <div class="center">
+            <img src="images/oranj-ideate3.png" class="round shadow" alt="ideate2" style="width:250px">
+          </div>
+          <p><b>Be transparent</b><br>
+          Explain why certain information is required and what it is used for to build trust with the user</p>
+        </div>
+
+      </div>
+ <!--Restructuring the flow-->
+      <div class="row">
+        <div class="col-1 hidden sm"></div>
+        <div class="col-10">
+          <h3>Restructuring the flow</h3>
+          <p>Throughout the usability testing, I found that users lost track of their progress throughout the form, which made the process feel longer. I wanted to create a better way of mentally chunking the information for users, so I mapped out the structure of the flow that helps streamline the process for users by creating high level categories for users to know where they are within the process.</p>
+          <div class="center">
+            <img src="images/oranj-flow.png" alt="oranj-flow">
+          </div>
+         </div>
+        <div class="col-1 hidden sm"></div>
+      </div>
+    </div> <!--endcontainer-->
+
+
+    <div class="background">
+       <!--Prototype/Iterate-->
+      <div class="container">
+        <div class="row">
+          <div class="col-1 hidden sm"></div>
+          <div class="col-10">
+            <h2>Prototype/Iterate</h2>
+            <p>We tested our concepts using paper prototypes to quickly gain feedback on our designs before investing too much time and energy.</p>
+            <div class="center">
+              <img src="images/oranj-prototype.jpg" alt="oranj-prototype" style="width:400px;">
+            </div>
+            <p>A/B testing the prototypes showed that users preferred the humanized language as well as reorganized structure of the form, so we iterated on our prototypes and refined them based on our users’ feedback.</p>
+             <!--Final Prototype-->
+            <h3>Final Prototype</h3>
+          </div>
+          <div class="col-1 hidden sm"></div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <img src="images/oranj-final-prototype.png" alt="oranj-final-prototype">
+          </div>
+        </div>
+      </div> <!--endcontainer-->
+    </div>  <!--end gray-background-->
+
+ <!--Visual Direction-->
+  <div class="container">
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-10">
+        <h2>Visual Direction</h2>
+        <div class="center">
+          <img src="images/oranj-hifi.png" alt="oranj-hifi">
+        </div>
+        <p>I created a high-fidelity screen to capture the UI direction of the prototype. Oranj's main users are in the 30s-50s+ age range, thus an aspect that I wanted to address was readability concerns. I designed the interface with accessibility standards in mind: avoiding font sizes smaller than 16 pixels, using large buttons, high-contrast color combinations, and allowing users to manually adjust text size.</p>
+      </div>
+      <div class="col-1 hidden sm"></div>
+    </div>
+  </div><!--endcontainer-->
+
+ <!--Next Steps-->
+  <div class="container">
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-10">
+        <h2>Next Steps</h2>
+        <p>As we wrapped up the project, one future consideration we wanted the Oranj team to focus on was to create an onboarding process. We discovered through our research that a new user is introduced to Oranj is through an email link from the advisor. Because the advisor isn’t present during a new client’s introduction to Oranj, the client may not see how to fully use the product, or it’s full capability, which reflect the full range of services provided of the advisor. By reimagining the user's initial introduction the platform and guiding the user through an onboarding process that highlights the features of the platform, it can help garner the user’s trust to the platform before they even fill out the form.</p>
+      </div>
+      <div class="col-1 hidden sm"></div>
+    </div>
+  </div><!--endcontainer-->
+
+
+</main>
+
+<!-- End Document–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
