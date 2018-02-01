@@ -347,6 +347,10 @@ background-image: url("../images/aurora@3x.jpg");
 	margin: 20px 0;
 }
 
+main h2, h3 {
+	margin: 40px auto;
+}
+
 main img {
 	max-width: 100%;
     height: auto;
@@ -376,8 +380,6 @@ main img {
 
 .problem {
 	margin-top: 9%;
-
-<<<<<<< HEAD
 }
 
 .problem h4 {
@@ -391,9 +393,6 @@ main img {
 
 }
 
-=======
-}
-
 .problem h4 {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 600;
@@ -405,7 +404,6 @@ main img {
 
 }
 
->>>>>>> b71a7513dd4a62df5526c96d43c97a73d76e9346
 .problem img {
 	width: 20px;
     position: relative;
@@ -475,9 +473,16 @@ main h3 {
 	height: 100%;
 }
 
+
+.lightbulb {
+	width: 60px;
+	margin-top:30px;
+}
+
 .left-border .pink{
 	
 }
+
 
 
 /*--------------------*/
