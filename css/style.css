@@ -54,7 +54,6 @@ h4 {
 background-image: url("../images/aurora@3x.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position; 
 }
 
 .hero a {
@@ -104,10 +103,8 @@ background-image: url("../images/aurora@3x.jpg");
   display: block;
   height: 2px;
   position: absolute;
-    top: 50%;
+  top: 50%;
   width: 100%;
-}
-.section-title h3:before {
   left: 0;
 }
 
@@ -133,12 +130,6 @@ background-image: url("../images/aurora@3x.jpg");
     background-color: lavender;
 }
 
-@media only screen and (max-width: 719px) {
-	.line {
-		display: none;
-	}
-}
-
 .project-info {
 	position: relative;
 	
@@ -148,13 +139,6 @@ background-image: url("../images/aurora@3x.jpg");
 	border-left: 2px solid lavender;
 	padding-left: 30px; 
 	height: 100%;
-}
-
-@media only screen and (max-width: 800px) {
-	.left-border {
-		border: none;
-		padding-left: 0; 
-	}
 }
 
 .project-img img{
@@ -267,10 +251,11 @@ background-image: url("../images/aurora@3x.jpg");
 }
 
 .case-about {
-    width: 45%;
+    width: 35%;
     min-width: 300px;
-    margin-top: 4%;
-    margin-right: 30px;
+    margin-top: 2%;
+    margin-right: 50px;
+    float: right;
 }
 
 .case-about h4 {
@@ -351,15 +336,22 @@ main h2, h3 {
 	margin: 40px auto;
 }
 
+main h2 {
+	border-left: 3px solid pink;
+	padding-left: 20px; 
+	height: 100%;
+}
+
 main img {
 	max-width: 100%;
     height: auto;
+    margin: 3.5% auto;
 }
 
 .big-quote {
 	font-size: 1.35em;
 	font-weight: 600;
-	margin: 40px auto;
+	margin: 6.5% auto;
 }
 
 .shadow {
@@ -390,19 +382,8 @@ main img {
 	text-transform: uppercase;
 	display: inline-block;
 	margin: 0;
-
 }
 
-.problem h4 {
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 600;
-	letter-spacing: 0.1em;
-	color: #FC1C61;
-	text-transform: uppercase;
-	display: inline-block;
-	margin: 0;
-
-}
 
 .problem img {
 	width: 20px;
@@ -421,6 +402,32 @@ main h3 {
   	letter-spacing: 0.1em;
   	text-transform: uppercase;
 }
+
+
+img.lightbulb {
+	width: 60px;
+	margin-top:30px;
+}
+
+.divider-line {
+    width: 80%;
+    height: 1px;
+    background-color: #e4e4e4;
+    margin: 30px auto;
+}
+
+.mobile-divider-line {
+	display: none;
+    width: 80%;
+    height: 1px;
+    background-color: #e4e4e4;
+    margin: 30px auto;
+}
+
+.left-border .pink{
+	
+}
+
 
 
 /*----- mobile 1111 ------*/
@@ -443,7 +450,7 @@ main h3 {
 	}
 	
 	.case-about {
-		width: 75%;
+		width: 96%;
 		margin: 0 auto;
 		margin-top: -11%;
 		float: none;
@@ -465,27 +472,28 @@ main h3 {
 
 	.detail:first-of-type {
     margin-top: 0;
+	}
+
+}
+
+@media only screen and (max-width: 720px) {
+
+	.mobile-divider-line {
+		display: block;
+	}
+
+	.line {
+		display: none;
+	}
+
+	.left-border {
+		border: none;
+		padding-left: 0; 
+	}
+
 }
 
 
-.testimg img {
-	width: 100%;
-	height: 100%;
-}
-
-
-.lightbulb {
-	width: 60px;
-	margin-top:30px;
-}
-
-.left-border .pink{
-	
-}
-
-
-
-/*--------------------*/
 
 
 
