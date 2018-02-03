@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Rent App UX</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/simple-grid.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <header class="main-nav">
+  </header>
+
+  <div class="case-hero" >
+
+      <div class="case-title-box center">
+        <h1 class="case-title">Rent App UX</h1>
+        <p>Simplifying the tenant screening process</p>
+      </div>
+
+      <div class="hero-box">
+          <img src="images/rentapp-ux-hero.png" alt="rentapp-ux-hero">
+          <div class="case-about">
+            <div class="left-border pink">
+              <h4>ABOUT</h4>
+              <p>Rent Application is a tool for landlords to create, send digital rental applications, and order screening reports on potential tenants. As lead designer, I redesigned the entire platform to improve the user’s experience.</p>
+            </div>
+          </div>
+      </div>
+  </div>  
+
+  <!-- Intro Bar-->
+  <div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="center">
+          <div class= "detail">
+            <h4>Client</h4>
+            <p>Rent Application</p>
+          </div>
+          <div class= "detail">
+            <h4>Role</h4>
+            <p>Lead Designer</p>
+          </div>
+          <div class= "detail">
+            <h4>Contribution</h4>
+            <p>Reseach, Wireframing, Visual and Interaction Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<main>
+  <div class="container">
+
+  <!--The Brief-->
+      <div class="row">
+        <div class="col-1 hidden sm"></div>
+        <div class="col-10">
+          <h2>The Brief</h2>
+          <p>Rent Application was experiencing high a drop off rate from new users. I was brought on to help identify causes of the issue and design solutions to address the problems. 
+          <br><br>
+          As lead designer on this project, I was involved in all phases of the project from research and design to production. My tasks included conducting user research, wireframing, designing the high fidelity screens as well as crafting marketing material. I worked directly with the development team to produce an improved onboarding experience for new users.</p>
+        </div>
+        <div class="col-1 hidden sm"></div>
+      </div>
+
+      <div class="center">
+        <h3 class="underline" id="design-process">My Design Process</h3>
+        <img src="images/design-process.png" id="design-process">
+      </div>
+  </div><!--end container-->
+
+<!--start graybackground-->
+  <div class="background">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-1 hidden sm"></div>      
+        <div class="col-10">
+          <h2>Understanding the Problem</h2>
+          <p>To understand our user’s behavior pattern and the cause of the issue, I began the project by conducting some discovery and usability research.</p>
+        <div class="col-1 hidden sm"></div>           
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2 hidden sm"></div>        
+        <div class="col-8">
+          <p class="bold">Heuristic evaluation</p>
+          <p>I started off this project with an heuristic evaluation to familiarize myself with the product, assess the usability, and identify usability issues of the product in its current form.</p>
+          <br>
+          <p class="bold">Stakeholder Interviews</p>
+          <p>I worked with the CEO to understand the business objectives and constraints to determine the scope of the project, as well as ensure that I’m aligned with the CEO’s vision for Rent Application.</p>
+          <br>
+          <p class="bold">Discovery Research</p>
+          <p>I conducted user interviews, observed users through task recording software, and frequently engaged with our head of customer service to get direct input from users. This helped me to identify pain points as well as identify opportunities for improvement in the product. </p>
+          </div>
+          <div class="col-2 hidden sm"></div>        
+      </div>
+    </div><!--end container-->
+  </div><!--end graybackground-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-1 hidden sm"></div>        
+      <div class="col-10">
+        <h2>Defining the Problem</h2>
+        <p>From my research, I was able to identify the key problems that attributed to the user drop off rate. Here were the some of the key problems:</p>
+      </div>
+      <div class="col-2 hidden sm"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-10">
+        <h4 class="problem"><i class="far fa-times-circle"></i>  Problem #1</h4>
+        <p>Directly after signup, users were often confused by the complex dashboard without guidance, cluttered navigation, and unclear labeling. Many users were immediately put off by the experience.</p>
+        <h3 id=old-flow class="underline">old flow</h3>
+        <img id="old-flow" src="images/ra-ux-oldflow.png" alt="ra-ux-oldflow" class= "shadow">
+      </div>
+      <div class="col-1 hidden sm"></div>
+    </div>
+
+  <div class="divider-line"></div>
+
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-10">
+        <h4 class="problem"><i class="far fa-times-circle"></i>  Problem #2</h4>
+        <p>Immediately when users signed up, they are shown a banner that links to a page asking for the their SSN, birthdate, and answers to personal identifying questions.</p>
+        <img src="images/ra-old-dash.png" alt="ra-old-dash" class="shadow caption">
+        <p class="caption">A flashing banner requires users to put in their social security number and sensitive personal information, but didn’t effectively explain the context.</p>
+      </div>
+      <div class="col-1 hidden sm"></div>
+    </div>
+
+  <div class="divider-line"></div>
+
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-10">
+        <h4 class="problem"><i class="far fa-times-circle"></i>  Problem #3</h4>
+        <p>There were also number of issues when it came to pricing: New users were put off by immediately seeing a price on the dashboard, most users didn’t understand that the basic application form was free and that additional costs are paid for by applicants.</p>
+        <img src="images/ra-old-pricing.png" alt="old-pricing" class="shadow">
+      </div>
+      <div class="col-1 hidden sm"></div>
+    </div>
+
+  <div class="divider-line"></div>
+
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-6">
+        <h4 class="problem"><i class="far fa-times-circle"></i>  Problem #4</h4>
+        <p>There were also number of issues when it came to pricing: New users were put off by immediately seeing a price on the dashboard, most users didn’t understand that the basic application form was free and that additional costs are paid for by applicants.</p>
+      </div>
+      <div class="col-4 center">
+        <img id="ra-old-mobile" src="images/ra-old-mobile.png" alt="old-pricing">
+      </div>
+      <div class="col-1 hidden sm"></div>          
+    </div>
+
+  <div class="divider-line"></div>    
+
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-10">
+        <h3>our users</h3>
+        <p>From my research, I created two main user types that capture our primary users’ behavioral pattern for me to keep in mind as I design solutions.</p>
+      </div>
+      <div id="ra-personas"class="center shadow">
+        <img src="images/ra-persona-landlord.png" alt="ra-persona-landlord">
+        <img src="images/ra-persona-broker.png" alt="ra-persona-broker">          
+      </div> 
+      <div class="col-1 hidden sm"></div>
+    </div>
+
+  </div><!--end container-->
+
+    <!--start graybackground-->
+    <div class="background">
+      <div class="container">
+        <div class="row">
+          <div class="col-1 hidden sm"></div>          
+          <div class="col-10">
+            <h2>Design Solutions</h2>
+            <p>To address these key issues among many others, we decided the platform needed a comprehensive redesign. I created wireframes and prototypes to quickly gather user feedback and iterate on the solutions.</p>
+            <br><br>
+            <h3>Designing a new onboarding experience</h3>
+            <p>In the aim to reduce the complexity, I redesigned form creation experience by simplifying the experience into a linear guided  three step process.</p>
+          </div>
+        </div>
+        <div class="row">       
+          <div class="center">
+            <h3 class="underline">New Flow</h3>
+            <img src="images/ra-ux-newflow.png" alt="ra-ux-newflow"> 
+          </div>
+        </div>                   
+      </div><!--end container-->
+    </div><!--end graybackground-->
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-5">
+      <h3>Ditching the complex pricing model</h3>
+      <p>In order to communicate pricing to users, I guided users through a flow where users create their first form, which allowed users to select the reports they wanted with the associated costs displayed, and show the price total at the bottom change depending on which reports users selected.
+      <br><br><br>
+      I also changed the label wording  from generic “Price” to “Fee paid by applicant” to inform the user that applicants will pay the fees.</p>
+      </div>
+      <div class="col-1 hidden sm"></div>
+      <div class="col-6">
+      <div id="ra-pricing" class="center">
+        <img src="images/ra-ux-newpricing.png" alt="ra-ux-newpricing">
+        <img src="images/ra-ux-dash-pricing.png" alt="ra-ux-dash-pricing">
+      </div>  
+      </div>
+    </div>
+  </div><!--end container-->
+
+  <div class="background">
+    <div class="container">
+      <div class="row">
+        <div class="col-1 hidden sm"></div>
+        <div class="col-10">
+          <h3>Trust through Transparency and Context</h3>
+          <p>Experian verification is only required if users want to run credit reports. The purpose was unclear to users and did not seem optional. Users often questioned, “Why do they need my SSN?”.
+          <br><br>
+          I embedded this verification as an option into the form creation process and created a link to the experian flow only if users wanted to add credit reports. By presenting this option only when it applies to the user’s task, users were able to understand the context of Experian verification.</p>
+        </div>
+        <div class="col-1 hidden sm"></div>
+      </div>
+      <div class="center">
+        <img src="images/ra-ux-experian.png" alt="ra-ux-experian">
+      </div>
+    </div><!--end container-->
+  </div><!--end graybackground-->
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-10">
+        <h3>Redesigning the Dashboard</h3>
+        <p>Along with making some major changes to the initial user flow, I worked on improving the dashboard structure by highlighting the key actions based on research from users. By establishing more visual hierarchy, adding iconography and tooltips, and using more clearly defined categories, I was able to remove unnecessary clutter for the users.</p>
+      </div>
+      <div class="col-1 hidden sm"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 shadow">
+        <h3 class="underline">Before</h3>
+        <img src="images/ra-old-dash.png" alt="ra-old-dash.png">
+      </div>     
+      <div class="col-6 shadow">
+        <h3 class="underline">After</h3>         
+        <img src="images/ra-new-dash.png" alt="ra-new-dash.png">
+      </div>
+    </div>
+
+  </div><!--end container-->
+
+  <div class="background">
+    <div class="container">
+      <div class="row">
+        <div class="col-1 hidden sm"></div>
+        <div class="col-10">
+          <h3>Making a mobile experience</h3>
+          <p>In the rental industry, renting decisions often need to be made within the day of the results.  Having an optimized mobile experience is imperative for our users to take actions directly from an email notification on the phone to view and review a new applicant on the platform.</p>
+        </div>
+        <div class="col-1 hidden sm"></div>
+      </div>
+        <img src="images/ra-ux-new-mobile.png" alt="">
+    </div><!--end container-->
+  </div><!--end gray background-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-10">
+        <h3>Improving usability across the product</h3>
+        <p>In addition to reworking the onboarding experience, I’ve also worked on various other features for Rent Applications to ensure a unified experience across the platform.</p>
+      </div>
+      <div class="col-1 hidden sm"></div>
+    </div>
+      <img src="images/ra-ux-after-screens.png" alt="ra-ux-after-screens">    
+  </div><!--end container-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-1 hidden sm"></div>
+      <div class="col-10">
+        <h2>Validation and Results</h2>
+        <h3>Usability Testing</h3>
+        <p>We implemented customer monitoring software to observe users’ interaction with the redesigned product which helped us further iterate and improve on the design.</p>
+        <div class="center">
+          <img id="ra-ux-hotjar" src="images/ra-ux-hotjar.png" alt="ra-ux-hotjar">
+        </div>        
+      <div class="col-1 hidden sm"></div>
+      </div>
+    </div>   
+  </div><!--end container-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-1 hidden sm"></div>
+    <div class="col-10">
+      <p>I also created a survey to gather both qualitative and quantitative feedback on the redesign. The results showed signs of improvement to the product with the redesign efforts. The redesign also helped us reduce the bounce rate by 42.7% with the release.</p>
+      <div class="center">
+        <img id="ra-ux-results" src="images/ra-ux-results.png" alt="ra-ux-results">
+      </div>
+    </div>
+    <div class="col-1 hidden sm"></div>
+  </div>
+</div><!--end container-->
+
+</main>
+
+<!-- End Document–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
