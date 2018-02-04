@@ -221,17 +221,21 @@ background-image: url("../images/aurora@3x.jpg");
 	background-size: cover;
 }
 
-.case-title-box {
-	padding: 70px 20px 0px 20px;
-}
-
 .case-title {
+	padding: 70px 20px 0px 20px;
 	text-align: center;
+	margin: 0 auto;
 }
 
-.case-title-box p {
+.case-title h1{
+	font-size: 3.8em;
+}
+
+.case-title p {
     width: 80%;
+	color: #AFAFAF;
 	margin: 0 auto;
+
 }
 
 .hero-box {
@@ -327,12 +331,14 @@ background-image: url("../images/aurora@3x.jpg");
 
 .background {
 	background-color: #f8f8f8;
-	padding: 30px;
+	padding: 2% 0;
 	margin: 20px 0;
+	border-top: .5px solid #efefef;
+	border-bottom: .5px solid #efefef;
 }
 
-main h2, h3 {
-	margin: 40px auto;
+main h2 {
+	margin: 5% auto;
 }
 
 main h2 {
@@ -342,8 +348,10 @@ main h2 {
 }
 
 
+
+
 main h3 {
-    margin-bottom: 2%;	
+    margin-top: 4%;	
 	text-align: left;
 	font-size: 1.25em;
   	font-family: 'Work Sans', sans-serif;
@@ -360,6 +368,7 @@ main h3.underline {
   	font-weight: 400;
   	letter-spacing: 0.1em;
   	text-transform: uppercase;
+  	margin: 5% 0;
 }
 
 main h3#design-process:after {
@@ -377,6 +386,11 @@ main h3#oranj-final-prototype:after {
 
 img#ra-old-mobile {
 	max-width:250px;
+}
+
+
+img#ra-ux-newflow {
+	margin-top: 0;
 }
 
 main h3.underline:after{
@@ -418,7 +432,7 @@ img.shadow {
 }
 
 
-.round img {
+img.round {
 	border-radius: 50%;
     border: 1px solid #eeeeee;
 }
@@ -431,6 +445,11 @@ p.caption {
 
 img.caption {
 	margin-bottom: 0;
+}
+
+
+img.full-width {
+	width: 100%;
 }
 
 img#design-process {
@@ -455,7 +474,6 @@ img#ra-ux-hotjar {
 	width: 700px;
 }
 
-
 img#ra-ux-results {
 	width: 500px;
 }
@@ -468,7 +486,9 @@ img#ra-ux-results {
 	width: 430px;
 }
 
-
+img#ra-ui-old-landing {
+	margin-top: 0;
+}
 
 
 h4.problem {

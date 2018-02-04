@@ -33,23 +33,24 @@
   <header class="main-nav">
   </header>
 
-  <div class="case-hero" >
+  <div class="case-hero">
 
-      <div class="case-title-box center">
-        <h1 class="case-title">Rent App UX</h1>
-        <p>Simplifying the tenant screening process</p>
-      </div>
+    <div class="case-title">
+      <h1>Rent App UX</h1>
+      <p>Simplifying the tenant screening process</p>
+    </div>
 
-      <div class="hero-box">
-          <img src="images/rentapp-ux-hero.png" alt="rentapp-ux-hero">
-          <div class="case-about">
-            <div class="left-border pink">
-              <h4>ABOUT</h4>
-              <p>Rent Application is a tool for landlords to create, send digital rental applications, and order screening reports on potential tenants. As lead designer, I redesigned the entire platform to improve the user’s experience.</p>
-            </div>
-          </div>
+    <div class="hero-box">
+      <img src="images/rentapp-ux-hero.png" alt="rentapp-ux-hero">
+      <div class="case-about">
+        <div class="left-border pink">
+          <h4>ABOUT</h4>
+          <p>Rent Application is a tool for landlords to create, send digital rental applications, and order screening reports on potential tenants. As lead designer, I redesigned the entire platform to improve the user’s experience.</p>
+        </div>
       </div>
-  </div>  
+    </div>
+    
+  </div>   
 
   <!-- Intro Bar-->
   <div class="intro">
@@ -97,7 +98,7 @@
 <!--start graybackground-->
   <div class="background">
     <div class="container">
-
+      <!--Understanding the Problem-->
       <div class="row">
         <div class="col-1 hidden sm"></div>      
         <div class="col-10">
@@ -125,6 +126,7 @@
   </div><!--end graybackground-->
 
   <div class="container">
+    <!--Defining the Problem-->
     <div class="row">
       <div class="col-1 hidden sm"></div>        
       <div class="col-10">
@@ -137,7 +139,7 @@
     <div class="row">
       <div class="col-1 hidden sm"></div>
       <div class="col-10">
-        <h4 class="problem"><i class="far fa-times-circle"></i>  Problem #1</h4>
+        <h4 class="problem"><i class="fas fa-exclamation-circle"></i>  Problem #1</h4>
         <p>Directly after signup, users were often confused by the complex dashboard without guidance, cluttered navigation, and unclear labeling. Many users were immediately put off by the experience.</p>
         <h3 id=old-flow class="underline">old flow</h3>
         <img id="old-flow" src="images/ra-ux-oldflow.png" alt="ra-ux-oldflow" class= "shadow">
@@ -150,7 +152,7 @@
     <div class="row">
       <div class="col-1 hidden sm"></div>
       <div class="col-10">
-        <h4 class="problem"><i class="far fa-times-circle"></i>  Problem #2</h4>
+        <h4 class="problem"><i class="fas fa-exclamation-circle"></i>  Problem #2</h4>
         <p>Immediately when users signed up, they are shown a banner that links to a page asking for the their SSN, birthdate, and answers to personal identifying questions.</p>
         <img src="images/ra-old-dash.png" alt="ra-old-dash" class="shadow caption">
         <p class="caption">A flashing banner requires users to put in their social security number and sensitive personal information, but didn’t effectively explain the context.</p>
@@ -163,7 +165,7 @@
     <div class="row">
       <div class="col-1 hidden sm"></div>
       <div class="col-10">
-        <h4 class="problem"><i class="far fa-times-circle"></i>  Problem #3</h4>
+        <h4 class="problem"><i class="fas fa-exclamation-circle"></i>  Problem #3</h4>
         <p>There were also number of issues when it came to pricing: New users were put off by immediately seeing a price on the dashboard, most users didn’t understand that the basic application form was free and that additional costs are paid for by applicants.</p>
         <img src="images/ra-old-pricing.png" alt="old-pricing" class="shadow">
       </div>
@@ -175,7 +177,7 @@
     <div class="row">
       <div class="col-1 hidden sm"></div>
       <div class="col-6">
-        <h4 class="problem"><i class="far fa-times-circle"></i>  Problem #4</h4>
+        <h4 class="problem"><i class="fas fa-exclamation-circle"></i>  Problem #4</h4>
         <p>There were also number of issues when it came to pricing: New users were put off by immediately seeing a price on the dashboard, most users didn’t understand that the basic application form was free and that additional costs are paid for by applicants.</p>
       </div>
       <div class="col-4 center">
@@ -186,6 +188,8 @@
 
   <div class="divider-line"></div>    
 
+
+    <!--Our Users-->
     <div class="row">
       <div class="col-1 hidden sm"></div>
       <div class="col-10">
@@ -203,13 +207,14 @@
 
     <!--start graybackground-->
     <div class="background">
+      <!--Design Solutions-->
       <div class="container">
         <div class="row">
           <div class="col-1 hidden sm"></div>          
           <div class="col-10">
             <h2>Design Solutions</h2>
             <p>To address these key issues among many others, we decided the platform needed a comprehensive redesign. I created wireframes and prototypes to quickly gather user feedback and iterate on the solutions.</p>
-            <br><br>
+            <br>
             <h3>Designing a new onboarding experience</h3>
             <p>In the aim to reduce the complexity, I redesigned form creation experience by simplifying the experience into a linear guided  three step process.</p>
           </div>
@@ -217,7 +222,7 @@
         <div class="row">       
           <div class="center">
             <h3 class="underline">New Flow</h3>
-            <img src="images/ra-ux-newflow.png" alt="ra-ux-newflow"> 
+            <img src="images/ra-ux-newflow.png" id="ra-ux-newflow" alt="ra-ux-newflow"> 
           </div>
         </div>                   
       </div><!--end container-->
@@ -225,11 +230,12 @@
 
   <div class="container">
 
+
     <div class="row">
       <div class="col-5">
       <h3>Ditching the complex pricing model</h3>
       <p>In order to communicate pricing to users, I guided users through a flow where users create their first form, which allowed users to select the reports they wanted with the associated costs displayed, and show the price total at the bottom change depending on which reports users selected.
-      <br><br><br>
+      <br><br>
       I also changed the label wording  from generic “Price” to “Fee paid by applicant” to inform the user that applicants will pay the fees.</p>
       </div>
       <div class="col-1 hidden sm"></div>
@@ -310,6 +316,8 @@
       <img src="images/ra-ux-after-screens.png" alt="ra-ux-after-screens">    
   </div><!--end container-->
 
+
+<!--Validation and Results-->
   <div class="container">
     <div class="row">
       <div class="col-1 hidden sm"></div>
