@@ -347,9 +347,6 @@ main h2 {
 	height: 100%;
 }
 
-
-
-
 main h3 {
     margin-top: 4%;	
 	text-align: left;
@@ -486,9 +483,17 @@ img#ra-ux-results {
 	width: 430px;
 }
 
+#new-landing img {
+	margin-top: 0;
+	width: 600px;
+}
+
 img#ra-ui-old-landing {
+	width: 600px;
 	margin-top: 0;
 }
+
+
 
 
 h4.problem {
