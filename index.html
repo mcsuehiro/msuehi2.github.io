@@ -19,6 +19,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/reset.css">
@@ -32,40 +34,80 @@
   </head>
   <body>
 
+
+<!--nav-––––––––––––––––––––––––––––-->
 	<header class="clearfix">
     <nav class="main-nav"> 
       <ul>
         <li>
-          <a href="#">Work</a>
+          <a href="#work">Work</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="mailto:mcsuehiro@gmail.com">Email</a>
         </li>
       </ul>
     </nav>
 	</header>
+<!---–––––––––––––––––––––––––––––––––––-->
 
-  <section class="hero">
+  <section class="hero clearfix">
     <div class="hero-intro">
     <h1>Misaki Suehiro</h1>
-    <p>Hi I'm an experience designer in Chicago<a href="#">click</a></p>
+    <p>Digital Experience Designer</p>
+    <a href="#work" class="button-work">View my Work</a>
+
+      <!---partial highlight–––––<a href="#">click</a></p>-->
     </div>
   </section>
 
 
-	<div class="container main">
+<div class="container main clearfix">
 
-<div class="section-title">
-    <h3 class><span>Work</span></h3>
-</div>
+  <section id="work">
 
-  <section class="projects">
+    <div class="section-title">
+        <h3 class><span>Work</span></h3>
+    </div>
 
       <div class="project">
-        <a href="#">
+        <a href="rentapp-ux.html">
+          <div class="row" id="rentapp-ux">
+            <div class="col-5 project-info">
+              <div class="left-border">
+              <h2 class>Rent App Ux</h2>
+              <p>Simplifying the tenant screening process for landlords</p>
+              <h4>UX / Research</h4>      
+              </div>
+            </div>
+            <div class="col-7 project-img center">
+              <img src="images/rentapp-ux-hero.png" alt="rentapp-ux-hero">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="rentapp-ui.html">
+          <div class="row" id="rentapp-ui">
+            <div class="col-5 project-info">
+              <div class="left-border">
+              <h2 class>Rent App UI</h2>
+              <p>Creating a new brand identity for a screening platform</p>
+              <h4>UI / Branding</h4>      
+              </div>
+            </div>
+            <div class="col-7 project-img center">
+              <img src="images/rentapp-ui-hero.png">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="oranj.html">
           <div class="row" id="oranj">
             <div class="col-5 project-info">
               <div class="left-border">
@@ -74,48 +116,17 @@
               <h4>UX / UI / BRANDING</h4>      
               </div>
             </div>
-            <div class="col-7 project-img">
+            <div class="col-7 project-img center">
               <img src="images/oranj-img.png">
             </div>
           </div>
         </a>
-      </div>
+      </div>      
 
-      <div class="project">
-        <a href="#">
-          <div class="row" id="oranj">
-            <div class="col-5 project-info">
-              <div class="left-border">
-              <h2 class>Rent Application</h2>
-              <p>Simplifying the tenant screening process for landlords</p>
-              <h4>UX / IA</h4>      
-              </div>
-            </div>
-            <div class="col-7 project-img">
-              <img src="images/oranj-img.png">
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="project">
-        <a href="#">
-          <div class="row" id="oranj">
-            <div class="col-5 project-info">
-              <div class="left-border">
-              <h2 class>RA Brand Redesign</h2>
-              <p>Creating a new brand identity for a screening platform</p>
-              <h4>UI / Branding</h4>      
-              </div>
-            </div>
-            <div class="col-7 project-img">
-              <img src="images/oranj-img.png">
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="project" id="RentApp">
+    </section>
+</div>
+<!--paint/splash background (easier to move?)
+      <div class="project clearfix" id="RentApp">
         <a href="#"><div class="row">
           <div class="col-1 line">
           </div>
@@ -131,14 +142,58 @@
           </div>
         </div></a>
       </div>
+-->
 
+
+
+<!--about w/ photo
+  <section id="about">
+    <div class="row">
+      <div class="col-4 center">
+        <img id="about-photo" src="images/about-photo.jpg" alt="about-photo">
+      </div>
+      <div class="col-8">
+        <h2>Hi There.</h2>
+        <p>My name is Misaki and I’m a Digital Designer specializing in visual and interaction design. With a background in psychology, a natural curiosity in people, and a passion for all design, I love to craft visual experiences. Feel free to reach out if you’d like to chat or discuss my work in further depth.</p>
+        <a href="" class="button-resume">View Resume</a>
+      </div>
+-->
+
+  <section id="about">
+
+    <div class="section-title">
+        <h3 class><span>about</span></h3>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-1 hidden sm"></div>      
+        <div class="col-10 center">
+          <h2>Hi There.</h2>
+          <p>My name is Misaki and I’m a Digital Designer specializing in visual and interaction design. With a background in psychology, a natural curiosity in people, and a passion for all design, I love to craft visual experiences. Feel free to reach out if you’d like to chat or discuss my work in further depth.</p>
+          <a href="Misaki-Suehiro-Resume.pdf" class="button-resume">View Resume</a>
+        </div>
+        <div class="col-1 hidden sm"></div> 
+        </div>
+      </div>
   </section>
 
-  <div class="contact">
+  <section class="social-links">
     
-  </div>
+  <ul>
+    <li><a href="be.net/misaki-suehiro">-Behance-</a></li>
+    <li><a href="mailto:mcsuehiro@gmail.com">-Email-</a></li>
+    <li><a href="https://www.linkedin.com/in/misakisuehiro/">-Linkedin-</a></li>        
+  </ul>
+    
+  </section>
 
-	</div>
+
+<footer>
+  <p>Designed and coded by Misaki Suehiro</p>
+</footer>
+
+
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

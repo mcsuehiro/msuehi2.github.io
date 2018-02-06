@@ -1,21 +1,43 @@
 
-h1, h2 {
+h1 {
+	font-size: 3.5em;
 	font-family: 'Playfair Display', serif;
 	font-weight: 700;
     margin: 10px auto;
-
+	
 }
 
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 3em;
+}
+/*---
+
+h1, h2 {
+
+    font-size: 2.5em;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    letter-spacing: .13em;
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+
+--*/
+
 h4 {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-weight: 500;
 	letter-spacing: 0.1em;
 	color: #B2B2B2;
 	text-transform: uppercase;
 }
 
+p {
+	font-family: 'Muli', sans-serif;
+}
+
 .main-nav {
-	display: none;
     height: 100px;
     margin-right: 5%;
     float: right;
@@ -33,9 +55,13 @@ h4 {
 .main-nav a {
 	text-decoration: none;
     height: 70px;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "Muli", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    color: #000;
+    color: #757575;
+}
+
+.main-nav a:hover {
+	color:#000;
 }
 
 .clearfix::after {
@@ -48,22 +74,69 @@ h4 {
 
 
 .hero {
-	height: 70vh;
-	background-color: #f8f8f8;
-background-image: url("../images/aurora@3x.jpg");
-	background-size: cover;
+	height: 80vh;
+	background-image: url("../images/hero-background.png");
+/*--background-image: url("../images/aurora@3x.jpg");--*/
+	background-size: contain;
 	background-repeat: no-repeat;
+    background-position: center;	
+	position: relative;
 }
 
+/*--partial highlight-
 .hero a {
 	background: linear-gradient(to bottom, transparent 0%, transparent 60%, #fbf36d 60%, #fbf36d 100%);
 	color: #000;
 	text-decoration: none;
 }
 
+-*/
+
+.hero-intro {
+	text-align: center;
+    margin: 0;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.hero p{
+	margin: 0;
+}
+
+/*--off to the side hero text
 .hero-intro {
 	display: inline-block;
     margin: 80px 30px;
+}
+--*/
+
+/*--work button--*/
+.button-work {
+    margin-top: 2em;
+	font-family: 'Muli', sans-serif;
+	font-weight: 500;
+	font-size: .8em;
+	color: #000;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding: 12px 22px;
+    border: solid #000 1px;
+    border-radius: 2px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+
+.button-work:hover {
+	background-color: #363636;
+    color: white;
 }
 
 .opacity {
@@ -108,12 +181,15 @@ background-image: url("../images/aurora@3x.jpg");
 }
 
 .project {
-	margin-top: 300px;
+	margin-top: 200px;
+
 }
 
-.project:first-of-type {
-	margin-top: 13%;
+#work > .project ~ .project {
+	margin-top: 200px;
+	margin-bottom: 100px;
 }
+
 .project a {
 	text-decoration: none;
 }
@@ -121,6 +197,7 @@ background-image: url("../images/aurora@3x.jpg");
 .project .row {
     height: 300px;
 }
+
 
 .line {
     height: 245px;
@@ -135,28 +212,143 @@ background-image: url("../images/aurora@3x.jpg");
 }
 
 .left-border {
-	border-left: 2px solid lavender;
+	border-left: 2px solid #CFCFCF;
 	padding-left: 30px; 
 	height: 100%;
 }
 
+.project h2 {
+	margin: 0;
+}
+
 .project-img img{
-	width: 100%;
+	width: 450px;;
 	min-width: 200px;
 	height: auto;
 	background-size: cover;
 }
 
-#oranj {
+.project .row {
 	background-image: url("../images/splash01.png");
 	background-repeat: no-repeat; 
 	background-size: contain;
 	background-position: 50% 50%; 
 }
 
-#oranj:hover h2 {color: pink;}
-#oranj:hover p {color: pink;}
-#oranj:hover h4 {color: #ececec;}FFC1A9
+#rentapp-ux{
+	background-image: url("../images/rentapp-ux-paint.png");
+}
+
+#rentapp-ux div.left-border {
+	border-left: 2px solid #E2E2FF;
+}
+
+#rentapp-ui {
+	background-image: url("../images/rentapp-ui-paint.png");
+}
+
+#rentapp-ui div.left-border {
+	border-left: 2px solid #F3EAFC;	
+}
+
+#rentapp-ui img {
+	width: 400px;
+}
+
+#oranj{
+	background-image: url("../images/oranj-paint.png");
+}
+
+#oranj div.left-border {
+	border-left: 2px solid #FCE7E5;
+}
+
+
+
+
+.project:hover h2 {color: #8B8C9A;}
+.project:hover p {color: #8B8C9A;}
+
+
+img#about-photo {
+	width: 250px;
+}
+
+
+/*--resume button--*/
+.button-resume {
+    margin: 3em auto;
+	font-family: 'Muli', sans-serif;
+	font-weight: 500;
+	font-size: .8em;
+	color: #000;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding: 12px 22px;
+    border: solid #000 1px;
+    border-radius: 2px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+
+.button-resume:hover {
+	background-color: #363636;
+    color: white;
+}
+
+
+.social-links ul {
+	text-align: center;
+    list-style: none;
+    margin: 100px auto;
+    padding: 0;
+}
+
+
+.social-links li {
+	margin: 0 80px;
+    display: inline-block;
+}
+
+.social-links a {
+	text-decoration: none;
+    height: 70px;
+    font-family: "Muli", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #757575;
+
+}
+
+.social-links a:hover{
+	color: #000;
+}
+
+footer {
+	margin-top: 50px;
+	background-color: #f8f8f8;
+	height: 70px;
+	position: relative;
+}
+
+footer p{
+    text-align: center;
+    font-size: .8em;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
 
 /*----grey hover project background--
 .project:hover {
@@ -178,6 +370,17 @@ background-image: url("../images/aurora@3x.jpg");
 }
 
 #RentApp:hover h2 {color: pink; }
+
+#about p {
+	text-align:left;
+}
+
+img#about-photo {
+	width: 250px;
+}
+
+
+
 
 /*----- mobile -----*/
 
@@ -239,7 +442,7 @@ background-image: url("../images/aurora@3x.jpg");
 }
 
 .hero-box {
-	margin: 5% auto 0;
+	margin: 5% auto;
 	width: 80%;
 	background-image: url("../images/splash01.png");
 	background-repeat: no-repeat; 
@@ -255,7 +458,7 @@ background-image: url("../images/aurora@3x.jpg");
 
 .case-about {
     width: 35%;
-    min-width: 300px;
+    min-width: 100px;
     margin-top: 2%;
     margin-right: 50px;
     float: right;
@@ -273,7 +476,7 @@ background-image: url("../images/aurora@3x.jpg");
     color: #4A4A4A;
 }
 
-.case-hero img {
+.case-hero img { 
 	float: right;
     width: 55%;
     max-width: 600px;
@@ -494,8 +697,6 @@ img#ra-ui-old-landing {
 }
 
 
-
-
 h4.problem {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 500;
@@ -604,6 +805,8 @@ p.bold {
 
 }
 
+
+/
 
 
 
