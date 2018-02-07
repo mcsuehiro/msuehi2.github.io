@@ -15,8 +15,8 @@ h2 {
 
 a {
 	text-decoration: none;
-	font-weight: 300;
-	color: #757575;
+	font-weight: 400;
+	color: #333447;
 }
 /*---
 
@@ -163,7 +163,7 @@ p {
     display: inline-block;
     text-decoration: none;
     position: relative;
-    padding: 12px 22px;
+    padding: 15px 30px;
     border: solid #000 1px;
     border-radius: 2px;
     -webkit-transition: all 0.4s;
@@ -308,7 +308,7 @@ animation-delay: 1.6s;
 
 .left-border {
 	border-left: 2px solid #CFCFCF;
-	padding-left: 30px; 
+	padding-left: 35px; 
 	height: 100%;
 }
 
@@ -467,7 +467,7 @@ img#about-photo {
 
 /*--resume button--*/
 .button-resume {
-    margin: 3em auto;
+    margin: 2% auto;
 	font-family: 'Muli', sans-serif;
 	font-weight: 500;
 	font-size: .8em;
@@ -477,7 +477,7 @@ img#about-photo {
     display: inline-block;
     text-decoration: none;
     position: relative;
-    padding: 12px 22px;
+    padding: 15px 30px;
     border: solid #000 1px;
     border-radius: 2px;
     -webkit-transition: all 0.4s;
