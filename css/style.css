@@ -10,6 +10,13 @@ h1 {
 h2 {
 	font-family: 'Playfair Display', serif;
 	font-size: 3em;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 300;
+	color: #757575;
 }
 /*---
 
@@ -29,7 +36,7 @@ h4 {
 	font-family: 'Muli', sans-serif;
 	font-weight: 500;
 	letter-spacing: 0.1em;
-	color: #B2B2B2;
+	color: #cfcfcf;
 	text-transform: uppercase;
 }
 
@@ -48,7 +55,7 @@ p {
 }
 
 .main-nav li {
-	margin: 30px 20px 30px 20px;
+	margin: 30px 20px;
     display: inline-block;
 }
 
@@ -56,12 +63,40 @@ p {
 	text-decoration: none;
     height: 70px;
     font-family: "Muli", Helvetica, Arial, sans-serif;
+    font-weight: 300;
     font-size: 16px;
     color: #757575;
+    position:relative;
 }
 
-.main-nav a:hover {
-	color:#000;
+.main-nav a::before,
+.main-nav a::after {
+    content: '';
+    background: #757575;
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 0;
+  }
+  
+.main-nav a::before {
+    left: 0;
+  }
+  
+.main-nav a::after {
+    right: 0;
+    transition: width 200ms ease;
+  }
+  
+.main-nav a:hover::before {
+	  width: 100%;  
+	  transition: width 200ms ease;
+}
+
+.main-nav a:hover::after {
+	  width: 100%;
+	  background: transparent;
+	  transition: 0;
 }
 
 .clearfix::after {
@@ -69,6 +104,9 @@ p {
     clear: both;
     display: table;
 }
+
+
+
 
 /*----------- Homepage -----------*/
 
@@ -94,6 +132,7 @@ p {
 
 .hero-intro {
 	text-align: center;
+	width: 400px;
     margin: 0;
     top: 40%;
     left: 50%;
@@ -139,6 +178,52 @@ p {
     color: white;
 }
 
+/*---fade in hero--*/
+
+/* make keyframes that tell the start state and the end state of our object */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
+}
+
+.fadeInBlock {
+   opacity:0;
+}
+/*-----*/
+
 .opacity {
 	width: 100%;
 	height: 100vh;
@@ -180,14 +265,24 @@ p {
   left: 0;
 }
 
-.project {
+/*--
+.work > .project ~ .project {
 	margin-top: 200px;
+	margin-bottom: 200px;
+}
+--*/
 
+#work .project {
+	margin-bottom: 300px;
 }
 
-#work > .project ~ .project {
-	margin-top: 200px;
-	margin-bottom: 100px;
+
+#first-project {
+	margin-top: 20%;
+}
+
+#last-project {
+	margin-bottom: 20%;
 }
 
 .project a {
@@ -222,10 +317,9 @@ p {
 }
 
 .project-img img{
-	width: 450px;;
-	min-width: 200px;
-	height: auto;
-	background-size: cover;
+    max-width: 100%;
+    height: auto;
+	background-size: contain;
 }
 
 .project .row {
@@ -235,45 +329,141 @@ p {
 	background-position: 50% 50%; 
 }
 
+/*--RentApp UX colors--*/
+
 #rentapp-ux{
 	background-image: url("../images/rentapp-ux-paint.png");
+	background-repeat: no-repeat; 
+	background-size: contain;
+	background-position: 50% 50%; 
 }
 
-#rentapp-ux div.left-border {
-	border-left: 2px solid #E2E2FF;
+#rentapp-ux .left-border {
+	border-color: #E2E2FF;
 }
+
+#rentapp-ux-case h2 {
+	border-color: #E2E2FF;
+}
+
+/*--RentApp UI colors--*/
 
 #rentapp-ui {
 	background-image: url("../images/rentapp-ui-paint.png");
+	background-repeat: no-repeat; 
+	background-size: contain;
+	background-position: 50% 50%; 
 }
 
-#rentapp-ui div.left-border {
-	border-left: 2px solid #F3EAFC;	
+#rentapp-ui .left-border {
+	border-color: #F3EAFC;	
 }
 
-#rentapp-ui img {
-	width: 400px;
+
+#rentapp-ui-case h2 {
+	border-color: #F3EAFC;	
 }
 
-#oranj{
+
+.project #rentapp-ui img {
+	margin-top: -6%;
+	width: 450px;
+}
+
+.case-hero #rentapp-ui img{
+	margin-top: -3%;
+	width: 450px;
+}
+
+
+
+
+/*--Oranj colors--*/
+
+#oranj {
 	background-image: url("../images/oranj-paint.png");
+	background-repeat: no-repeat; 
+	background-size: contain;
+	background-position: 50% 50%; 
 }
 
-#oranj div.left-border {
-	border-left: 2px solid #FCE7E5;
+#oranj .left-border {
+	border-color: #FCE7E5;
+}
+
+#oranj-case h2 {
+	border-color: #FCE7E5;	
 }
 
 
 
 
-.project:hover h2 {color: #8B8C9A;}
+.project h2, p {
+	-webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
 .project:hover p {color: #8B8C9A;}
+.project:hover h2 {color: #8B8C9A;}
 
+
+/*-WEIRD LINE HIGHLIGHT----
+.project-title {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.project-title:before, .project-title:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 20px;
+  top: 40%;
+  margin-top: -0.5px;
+  background: rgba(185, 185, 246, 0.38);;
+}
+
+
+.project-title:before {
+  left: -2.5px;
+}
+.project-title:after {
+  right: 2.5px;
+  background: rgba(185, 185, 246, 0.38);;
+  transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.project:hover .project-title:before {
+  width: 100%;
+  transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.projext:hover .project-title:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+--*/
 
 img#about-photo {
 	width: 250px;
+	margin-top: 23px;
 }
 
+#about .container {
+	margin: 5% auto;
+}
+
+.about-text {
+	margin-left: 30px;
+}
+
+.about-text h2 {
+	margin: 0;
+}
 
 /*--resume button--*/
 .button-resume {
@@ -301,22 +491,37 @@ img#about-photo {
 	background-color: #363636;
     color: white;
 }
+#social-links {
+	margin-top: 100px;
+}
 
+#social-links .background {
+	margin: 0;
+	padding: 0;
+}
 
-.social-links ul {
+#social-links .section-title span{
+	background: #f8f8f8;
+}
+
+#social-links ul {
 	text-align: center;
     list-style: none;
-    margin: 100px auto;
+    margin: 60px auto 90px;
     padding: 0;
 }
 
 
-.social-links li {
-	margin: 0 80px;
+#social-links li {
+	margin-right: 80px;
     display: inline-block;
 }
 
-.social-links a {
+#social-links li:last-child {
+	margin-right: 0;
+}
+
+#social-links a {
 	text-decoration: none;
     height: 70px;
     font-family: "Muli", Helvetica, Arial, sans-serif;
@@ -325,13 +530,12 @@ img#about-photo {
 
 }
 
-.social-links a:hover{
+#social-links a:hover{
 	color: #000;
 }
 
 footer {
-	margin-top: 50px;
-	background-color: #f8f8f8;
+	background-color: #fff;
 	height: 70px;
 	position: relative;
 }
@@ -339,6 +543,7 @@ footer {
 footer p{
     text-align: center;
     font-size: .8em;
+    color: #757575;
     margin: 0;
     top: 50%;
     left: 50%;
@@ -371,11 +576,11 @@ footer p{
 
 #RentApp:hover h2 {color: pink; }
 
-#about p {
+.about p {
 	text-align:left;
 }
 
-img#about-photo {
+img.about-photo {
 	width: 250px;
 }
 
@@ -413,11 +618,6 @@ img#about-photo {
 -------*/
 /*----------- Case Study -----------*/
 
-.case-main h2 {
-	font-family: 'Lato', sans-serif;
-	font-size: 1.8rem;
-}
-
 .case-hero {
 	width: 100%;
 	background-color: #fff;
@@ -425,9 +625,9 @@ img#about-photo {
 }
 
 .case-title {
-	padding: 70px 20px 0px 20px;
-	text-align: center;
-	margin: 0 auto;
+    width: 600px;
+    text-align: center;
+    margin: 2% auto 5%;
 }
 
 .case-title h1{
@@ -435,8 +635,8 @@ img#about-photo {
 }
 
 .case-title p {
-    width: 80%;
-	color: #AFAFAF;
+	color: #757575;
+	font-weight: 300;
 	margin: 0 auto;
 
 }
@@ -457,11 +657,10 @@ img#about-photo {
 }
 
 .case-about {
-    width: 35%;
+    width: 40%;
     min-width: 100px;
-    margin-top: 2%;
     margin-right: 50px;
-    float: right;
+    float: left;
 }
 
 .case-about h4 {
@@ -469,7 +668,7 @@ img#about-photo {
 }
 
 .case-about p {
-	margin-top: 10px;
+	margin: 10px 0 0;
     font-size: 1.3em;
     font-weight: 500;
     line-height: 1.85;
@@ -478,7 +677,7 @@ img#about-photo {
 
 .case-hero img { 
 	float: right;
-    width: 55%;
+    width: 50%;
     max-width: 600px;
 }
 
@@ -507,7 +706,7 @@ img#about-photo {
 }
 
 .intro .detail {
-	vertical-align: top;
+	vertical-align: middle;
     display: inline-block;
     width: 29%; /*--250px?--*/
     text-align: left;
@@ -534,24 +733,23 @@ img#about-photo {
 
 .background {
 	background-color: #f8f8f8;
-	padding: 2% 0;
-	margin: 20px 0;
+	padding: 4% 0;
+	margin: 4% 0;
 	border-top: .5px solid #efefef;
 	border-bottom: .5px solid #efefef;
 }
 
-main h2 {
-	margin: 5% auto;
-}
 
 main h2 {
+	font-size: 2.5em;
+	margin: 5% auto;
 	border-left: 3px solid pink;
 	padding-left: 20px; 
 	height: 100%;
 }
 
 main h3 {
-    margin-top: 4%;	
+    margin: 4% 0;	
 	text-align: left;
 	font-size: 1.25em;
   	font-family: 'Work Sans', sans-serif;
@@ -658,12 +856,12 @@ img#design-process {
 	width: 600px;
 }
 
-#oranj-ideate p{
-	padding-left: 12%;
+#oranj-ideate img {
+	width: 200px;
 }
 
-img#ra-ux-hotjar {
-	width: 600px
+#oranj-ideate p{
+	padding-left: 12%;
 }
 
 img#old-flow {
@@ -716,7 +914,7 @@ img.lightbulb {
 .divider-line {
     width: 80%;
     height: 1px;
-    background-color: #f7f7f7;
+    background-color: #efefef;
     margin: 30px auto;
 }
 
@@ -724,7 +922,7 @@ img.lightbulb {
 	display: none;
     width: 80%;
     height: 1px;
-    background-color: #f7f7f7;
+    background-color: #efefef;
     margin: 30px auto;
 }
 
@@ -739,10 +937,7 @@ p.bold {
     margin-bottom: -15px;	
 }
 
-
-
-
-/*----- mobile 1111 ------*/
+/*----- mobile 846 ------*/
 
 @media only screen and (max-width: 846px) {
 
@@ -764,7 +959,7 @@ p.bold {
 	.case-about {
 		width: 96%;
 		margin: 0 auto;
-		margin-top: -11%;
+		margin-top: -8%;
 		float: none;
 	}
 
@@ -778,12 +973,12 @@ p.bold {
 	}
 
 	.intro .detail{
-		    width: 100%;
-    		margin: 15px 0 0;
+	    width: 100%;
+		margin: 15px 0 0;
 	}
 
 	.detail:first-of-type {
-    margin-top: 0;
+    	margin-top: 0;
 	}
 
 }
@@ -802,11 +997,33 @@ p.bold {
 		border: none;
 		padding-left: 0; 
 	}
+}
+
+@media only screen and (max-width: 540px) {
+
+	.case-title {
+		width: 100%;
+	}
+
+	.case-title h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 2.5em;
+	}
+
+	.main-nav li{
+		margin: 10px 10px;
+	}
+
+	.social-links li {
+		margin-right: 30px;
+	}
+
 
 }
 
-
-/
 
 
 
