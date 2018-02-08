@@ -65,14 +65,14 @@ p {
     font-family: "Muli", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 16px;
-    color: #757575;
+    color: #8b8c9a;
     position:relative;
 }
 
 .main-nav a::before,
 .main-nav a::after {
     content: '';
-    background: #757575;
+    background: #333447;
     position: absolute;
     top: 50%;
     height: 2px;
@@ -97,6 +97,10 @@ p {
 	  width: 100%;
 	  background: transparent;
 	  transition: 0;
+}
+
+.main-nav a:hover {
+	color: #333447;
 }
 
 .clearfix::after {
@@ -174,7 +178,7 @@ p {
 
 
 .button-work:hover {
-	background-color: #363636;
+	background-color: #333447;
     color: white;
 }
 
@@ -230,6 +234,10 @@ animation-delay: 1.6s;
 	background-image: linear-gradient(to top, #ffffff, rgba(250, 250, 250, 0.0));
 }
 
+section {
+	padding: 10px 0;
+}
+
 
 .section-title {
   width: 200px;
@@ -244,8 +252,8 @@ animation-delay: 1.6s;
 
 .section-title span {
   color: #d0d0d0;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Muli', sans-serif;
+  font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background: #fff;
@@ -272,27 +280,6 @@ animation-delay: 1.6s;
 }
 --*/
 
-#work .project {
-	margin-bottom: 300px;
-}
-
-
-#first-project {
-	margin-top: 20%;
-}
-
-#last-project {
-	margin-bottom: 20%;
-}
-
-.project a {
-	text-decoration: none;
-}
-
-.project .row {
-    height: 300px;
-}
-
 
 .line {
     height: 245px;
@@ -301,41 +288,56 @@ animation-delay: 1.6s;
     background-color: lavender;
 }
 
+.left-border {
+	border-left: 2px solid #CFCFCF;
+	padding-left: 25px; 
+	height: 100%;
+}
+
+.project {
+	margin: 0;
+}
+
+#work .project:first-of-type {
+	margin-top: 10%;
+}
+
+#work .project:last-of-type {
+	margin-bottom: 0;
+}
+
 .project-info {
 	position: relative;
 	
-}
-
-.left-border {
-	border-left: 2px solid #CFCFCF;
-	padding-left: 35px; 
-	height: 100%;
 }
 
 .project h2 {
 	margin: 0;
 }
 
-.project-img img{
-    max-width: 100%;
+.project a {
+	text-decoration: none;
+}
+
+.project-img img {
+    width: 100%;
+    max-width: 500px;
     height: auto;
 	background-size: contain;
 }
 
 .project .row {
+	padding-top: 10%;
 	background-image: url("../images/splash01.png");
 	background-repeat: no-repeat; 
-	background-size: contain;
-	background-position: 50% 50%; 
+    background-size: 80%;
+    background-position: 60% -50%;
 }
 
 /*--RentApp UX colors--*/
 
-#rentapp-ux{
+.case-hero#rentapp-ux{
 	background-image: url("../images/rentapp-ux-paint.png");
-	background-repeat: no-repeat; 
-	background-size: contain;
-	background-position: 50% 50%; 
 }
 
 #rentapp-ux .left-border {
@@ -350,9 +352,6 @@ animation-delay: 1.6s;
 
 #rentapp-ui {
 	background-image: url("../images/rentapp-ui-paint.png");
-	background-repeat: no-repeat; 
-	background-size: contain;
-	background-position: 50% 50%; 
 }
 
 #rentapp-ui .left-border {
@@ -365,26 +364,23 @@ animation-delay: 1.6s;
 }
 
 
-.project #rentapp-ui img {
+#rentapp-ui .project-img img {
 	margin-top: -6%;
-	width: 450px;
+	max-width: 450px;
 }
 
-.case-hero #rentapp-ui img{
+.case-hero#rentapp-ui img{
 	margin-top: -3%;
-	width: 450px;
+    margin-right: 4%;
+	max-width: 430px;
 }
-
 
 
 
 /*--Oranj colors--*/
 
-#oranj {
+.case-hero #oranj {
 	background-image: url("../images/oranj-paint.png");
-	background-repeat: no-repeat; 
-	background-size: contain;
-	background-position: 50% 50%; 
 }
 
 #oranj .left-border {
@@ -398,7 +394,7 @@ animation-delay: 1.6s;
 
 
 
-.project h2, p {
+.project h2, .project p {
 	-webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -441,7 +437,7 @@ animation-delay: 1.6s;
   transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.projext:hover .project-title:after {
+.project:hover .project-title:after {
   background: transparent;
   width: 100%;
   transition: 0s;
@@ -488,16 +484,13 @@ img#about-photo {
 
 
 .button-resume:hover {
-	background-color: #363636;
+	background-color: #333447;
     color: white;
-}
-#social-links {
-	margin-top: 100px;
 }
 
 #social-links .background {
 	margin: 0;
-	padding: 0;
+	padding: 0 2%;
 }
 
 #social-links .section-title span{
@@ -507,13 +500,13 @@ img#about-photo {
 #social-links ul {
 	text-align: center;
     list-style: none;
-    margin: 60px auto 90px;
+    margin: 60px auto;
     padding: 0;
 }
 
 
 #social-links li {
-	margin-right: 80px;
+	margin-right: 10%;
     display: inline-block;
 }
 
@@ -526,7 +519,7 @@ img#about-photo {
     height: 70px;
     font-family: "Muli", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    color: #757575;
+    color: #8b8c9a;
 
 }
 
@@ -622,6 +615,10 @@ img.about-photo {
 	width: 100%;
 	background-color: #fff;
 	background-size: cover;
+	background-image: url("../images/splash01.png");
+	background-repeat: no-repeat; 
+    background-size: 75%;
+    background-position: 80% 50%;
 }
 
 .case-title {
@@ -635,7 +632,7 @@ img.about-photo {
 }
 
 .case-title p {
-	color: #757575;
+	color: #8b8c9a;
 	font-weight: 300;
 	margin: 0 auto;
 
@@ -644,10 +641,6 @@ img.about-photo {
 .hero-box {
 	margin: 5% auto;
 	width: 80%;
-	background-image: url("../images/splash01.png");
-	background-repeat: no-repeat; 
-	background-size: contain;
-	background-position: 50% 50%; 
 }
 
 .hero-box:after {
@@ -702,7 +695,7 @@ img.about-photo {
 .intro .center {
     width: 75%;
     margin: 0 auto;
-    padding-left: 4%;
+    padding-left: 7%;
 }
 
 .intro .detail {
@@ -726,8 +719,9 @@ img.about-photo {
 }
 
 .intro .container p {
-	font-size: 1.3rem;
-	margin: 0 auto;
+	font-size: 1.125em;
+	font-weight: 400;
+	margin: 1% auto 0;
 	line-height: 1.3;
 }
 
@@ -741,6 +735,7 @@ img.about-photo {
 
 
 main h2 {
+  	font-family: 'Muli', sans-serif;	
 	font-size: 2.5em;
 	margin: 5% auto;
 	border-left: 3px solid pink;
@@ -752,8 +747,8 @@ main h3 {
     margin: 4% 0;	
 	text-align: left;
 	font-size: 1.25em;
-  	font-family: 'Work Sans', sans-serif;
-  	font-weight: 500;
+  	font-family: 'Muli', sans-serif;
+  	font-weight: 600;
   	letter-spacing: 0.1em;
   	text-transform: uppercase;
 
@@ -762,11 +757,11 @@ main h3 {
 main h3.underline {
 	text-align: center;
 	font-size: 1.25em;
-  	font-family: 'Work Sans', sans-serif;
+  	font-family: 'Muli', sans-serif;
   	font-weight: 400;
   	letter-spacing: 0.1em;
   	text-transform: uppercase;
-  	margin: 5% 0;
+  	margin: 30px 0;
 }
 
 main h3#design-process:after {
@@ -860,7 +855,7 @@ img#design-process {
 	width: 200px;
 }
 
-#oranj-ideate p{
+#oranj-ideate p, #oranj-ideate h4{
 	padding-left: 12%;
 }
 
@@ -896,8 +891,8 @@ img#ra-ui-old-landing {
 
 
 h4.problem {
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 500;
+	font-family: 'Muli', sans-serif;
+	font-weight: 600;
 	letter-spacing: 0.1em;
 	color: #FC1C61;
 	text-transform: uppercase;
@@ -905,6 +900,17 @@ h4.problem {
 	margin: 3% 0 auto;
 }
 
+h4.bold-p{
+	font-family: 'Muli', sans-serif;
+	text-align: left;
+	text-transform: capitalize;
+	letter-spacing: 0;
+	font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #333447;
+    margin: 0;
+}
 
 img.lightbulb {
 	width: 60px;
@@ -924,10 +930,6 @@ img.lightbulb {
     height: 1px;
     background-color: #efefef;
     margin: 30px auto;
-}
-
-.left-border .pink{
-	
 }
 
 p.bold {
@@ -974,7 +976,7 @@ p.bold {
 
 	.intro .detail{
 	    width: 100%;
-		margin: 15px 0 0;
+		margin: 8% 0 0;
 	}
 
 	.detail:first-of-type {
@@ -984,6 +986,14 @@ p.bold {
 }
 
 @media only screen and (max-width: 720px) {
+
+	.project{
+		margin: 10% auto;
+	}
+
+	.case-title {
+		width: 80%;
+	}
 
 	.mobile-divider-line {
 		display: block;
@@ -997,28 +1007,53 @@ p.bold {
 		border: none;
 		padding-left: 0; 
 	}
+
+	.button-resume {
+		margin: 0 auto;
+	}
+
+	#oranj-ideate p, #oranj-ideate h4 {
+    	padding-left: 0;
+
+	}
+
+    h4.bold-p {
+    text-align: center;
+    }
+
 }
 
 @media only screen and (max-width: 540px) {
 
 	.case-title {
-		width: 100%;
+		margin-bottom: 10%;
 	}
 
 	.case-title h1 {
 		font-size: 3em;
+		margin: 10px auto;
 	}
+
+	h1 {
+		font-size: 3em;
+		margin: 0;
+	}
+
 
 	h2 {
 		font-size: 2.5em;
+		line-height: 1.2;
+	}
+
+	main h2 {
+		font-size: 2em;
+		line-height: 1.2;
+		border: none;
+		padding: 0;
 	}
 
 	.main-nav li{
 		margin: 10px 10px;
-	}
-
-	.social-links li {
-		margin-right: 30px;
 	}
 
 
