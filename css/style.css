@@ -236,6 +236,7 @@ animation-delay: 1.6s;
 
 section {
 	padding: 10px 0;
+	outline:none;
 }
 
 
@@ -336,7 +337,7 @@ section {
 
 /*--RentApp UX colors--*/
 
-.case-hero#rentapp-ux{
+#rentapp-ux{
 	background-image: url("../images/rentapp-ux-paint.png");
 }
 
