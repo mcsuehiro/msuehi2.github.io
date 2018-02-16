@@ -1,3 +1,78 @@
+/*-- cool Scroll thingy--*/
+
+.scroll {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 11px;
+    height: 100px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll.is-left {
+    right: auto;
+    left: 0;
+    margin: 44% 0 0 7.6%
+}
+
+.scroll:after,
+.scroll:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 100%;
+    content: ''
+}
+
+.scroll:before {
+    z-index: 10;
+    -webkit-animation: scroll 2.4s infinite normal;
+    animation: scroll 2.4s infinite normal;
+    background: #333
+}
+
+.scroll:after {
+    background: #cacaca
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0)
+    }
+    15% {
+        -webkit-transform: translate3d(0, -98%, 0)
+    }
+    85% {
+        -webkit-transform: translate3d(0, 98%, 0)
+    }
+    100% {
+        -webkit-transform: translate3d(0, 100%, 0)
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate3d(0, -100%, 0)
+    }
+    15% {
+        transform: translate3d(0, -98%, 0)
+    }
+    85% {
+        transform: translate3d(0, 98%, 0)
+    }
+    100% {
+        transform: translate3d(0, 100%, 0)
+    }
+}
+
+
+/*----*/
 
 h1 {
 	font-size: 3.5em;
@@ -343,8 +418,8 @@ section {
 	padding-top: 10%;
 	background-image: url("../images/splash01.png");
 	background-repeat: no-repeat; 
-    background-size: 80%;
-    background-position: 60% -50%;
+  background-size: 80%;
+  background-position: 60% -50%;
 }
 
 /*--RentApp UX colors--*/
@@ -384,7 +459,7 @@ section {
 
 .case-hero#rentapp-ui img{
 	margin-top: -3%;
-    margin-right: 4%;
+  margin-right: 4%;
 	max-width: 430px;
 }
 
@@ -392,7 +467,7 @@ section {
 
 /*--Oranj colors--*/
 
-.case-hero #oranj {
+#oranj {
 	background-image: url("../images/oranj-paint.png");
 }
 
@@ -503,7 +578,12 @@ img#about-photo {
 
 #social-links .background {
 	margin: 0;
-	padding: 0 2%;
+  width: 100vw;
+}
+
+#social-links h2 {
+  padding: 0 4%;
+
 }
 
 #social-links .section-title span{
@@ -1022,11 +1102,11 @@ p.bold {
 	}
 
 	.button-resume {
-		margin: 0 auto;
+	   margin: 0 auto;
 	}
 
 	#oranj-ideate p, #oranj-ideate h4 {
-    	padding-left: 0;
+    padding-left: 0;
 
 	}
 
@@ -1071,7 +1151,6 @@ p.bold {
 
 
 }
-
 
 
 
