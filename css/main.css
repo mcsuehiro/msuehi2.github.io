@@ -1,4 +1,4 @@
-/*-- cool Scroll thingy--*/
+/*--scroll animation--*/
 
 .scroll {
     position: absolute;
@@ -11,12 +11,6 @@
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.scroll.is-left {
-    right: auto;
-    left: 0;
-    margin: 44% 0 0 7.6%
 }
 
 .scroll:after,
