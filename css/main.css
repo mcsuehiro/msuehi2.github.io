@@ -8,7 +8,7 @@
     overflow: hidden;
     width: 11px;
     height: 100px;
-    top: 80%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -28,11 +28,11 @@
     z-index: 10;
     -webkit-animation: scroll 2.4s infinite normal;
     animation: scroll 2.4s infinite normal;
-    background: #333
+    background: #fff;
 }
 
 .scroll:after {
-    background: #cacaca
+    background: rgba(212, 212, 212, 0.5);
 }
 
 @-webkit-keyframes scroll {
@@ -70,16 +70,17 @@
 
 h1 {
 	font-size: 3.5em;
-	font-family: 'Playfair Display', serif;
-	font-weight: 700;
-    margin: 10px auto;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 500;
+  margin: 10px auto;
 	
 }
 
 h2 {
-	font-family: 'Playfair Display', serif;
-	font-size: 3em;
-	margin: 0;
+    line-height: 1em;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 3.5em;
+    font-weight: 500;
 }
 
 a {
@@ -129,19 +130,19 @@ p {
 }
 
 .main-nav a {
-	text-decoration: none;
+	  text-decoration: none;
     height: 70px;
     font-family: "Muli", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 16px;
-    color: #8b8c9a;
+    color: #fff;
     position:relative;
 }
 
 .main-nav a::before,
 .main-nav a::after {
     content: '';
-    background: #333447;
+    background: #fff;
     position: absolute;
     top: 50%;
     height: 2px;
@@ -169,13 +170,15 @@ p {
 }
 
 .main-nav a:hover {
-	color: #333447;
+	color: #fff;
 }
 
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
 }
 
 
@@ -196,13 +199,17 @@ background-position: center;
 
 
 .hero {
-	height: 80vh;
-	background-image: url("../images/hero-background.png");
+	height: 100vh;
+	background-image: url("../images/hero-background.jpg");
 /*--background-image: url("../images/aurora@3x.jpg");--*/
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
     background-position: center;	
 	position: relative;
+}
+
+.hero-content{
+  height: 100vh;
 }
 
 
@@ -216,16 +223,28 @@ background-position: center;
 -*/
 
 .hero-intro {
-	text-align: center;
-	width: 400px;
-    margin: 0;
-    top: 40%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+  text-align: left;
+	width: 70%;
+  min-width: 320px;
+  margin: 0;
+  top: 45%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-60%, -55%);
 }
 
-.hero p{
+.vertical-element {
+    width: 27px;
+    margin-bottom: 70px;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 3.3em;
+  line-height: 1.3em;
+}
+
+.hero p {
 	margin: 0;
 }
 
@@ -245,22 +264,22 @@ background-position: center;
 	color: #000;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-    display: inline-block;
-    text-decoration: none;
-    position: relative;
-    padding: 15px 30px;
-    border: solid #000 1px;
-    border-radius: 2px;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  padding: 15px 30px;
+  border: solid #000 1px;
+  border-radius: 2px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 
 .button-work:hover {
 	background-color: #333447;
-    color: white;
+  color: white;
 }
 
 /*---fade in hero--*/
@@ -364,24 +383,30 @@ section {
 
 
 .line {
-    height: 245px;
-    width: 2px;
-    margin-left: 5% !important;
-    background-color: lavender;
+  height: 245px;
+  width: 2px;
+  margin-left: 5% !important;
+  background-color: lavender;
 }
 
-.left-border {
+
+.project-intro .left-border {
+  margin-top: 10%;
+
+/*
 	border-left: 2px solid #CFCFCF;
 	padding-left: 25px; 
 	height: 100%;
+*/
 }
+
 
 .project {
 	margin: 0;
 }
 
 #work .project:first-of-type {
-	margin-top: 10%;
+	margin-top: 0;
 }
 
 #work .project:last-of-type {
@@ -390,40 +415,65 @@ section {
 
 .project-info {
 	position: relative;
-	
+  margin-top: 4%;
+  left: 3%;
+  background-image: url("../images/01.png");
+  background-repeat: no-repeat; 
+  background-size: 60%;
+/*
+  background-position: 60% -50%;
+*/
 }
 
-.project h2 {
+.project-title {
+  font-size: 4em;
 	margin: 0;
+  padding-top: 10%;
 }
+
 
 .project a {
 	text-decoration: none;
 }
 
 .project-img img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 	background-size: contain;
 }
 
+
 .project .row {
-	padding-top: 10%;
+	padding-top: 20%;
+/*
 	background-image: url("../images/splash01.png");
 	background-repeat: no-repeat; 
   background-size: 80%;
   background-position: 60% -50%;
+*/
 }
 
 /*--RentApp UX colors--*/
 
-#rentapp-ux{
-	background-image: url("../images/rentapp-ux-paint.png");
+
+
+#rentapp-ux .project-info {
+	background-image: url("../images/01.png");
 }
 
+#rentapp-ux .case-about {
+  background-image: url(../images/01.png);
+}
+
+/*
 #rentapp-ux .left-border {
 	border-color: #E2E2FF;
+}
+*/
+
+.case-hero#rentapp-ux {
+  background-image: url("../images/rentapp-ux-hero.png");
 }
 
 #rentapp-ux-case h2 {
@@ -432,14 +482,20 @@ section {
 
 /*--RentApp UI colors--*/
 
-#rentapp-ui {
-	background-image: url("../images/rentapp-ui-paint.png");
+#rentapp-ui .project-info {
+  background-image: url("../images/02.png");
 }
+
+#rentapp-ui .case-about {
+  background-image: url(../images/02.png);
+}
+
+/*
 
 #rentapp-ui .left-border {
 	border-color: #F3EAFC;	
 }
-
+*/
 
 #rentapp-ui-case h2 {
 	border-color: #F3EAFC;	
@@ -451,9 +507,12 @@ section {
 	max-width: 430px;
 }
 
+
+.case-hero#rentapp-ui {
+  background-image: url("../images/rentapp-ui-hero.png");
+}
+
 .case-hero#rentapp-ui img{
-	margin-top: -3%;
-  margin-right: 4%;
 	max-width: 430px;
 }
 
@@ -461,19 +520,30 @@ section {
 
 /*--Oranj colors--*/
 
-#oranj {
-	background-image: url("../images/oranj-paint.png");
+
+
+#oranj .project-info {
+  background-image: url("../images/03.png");
 }
 
+#oranj .case-about {
+  background-image: url(../images/03.png);
+}
+
+/*
 #oranj .left-border {
 	border-color: #FCE7E5;
 }
+*/
+
+.case-hero#oranj {
+  background-image: url("../images/oranj-hero.png");
+}
+
 
 #oranj-case h2 {
 	border-color: #FCE7E5;	
 }
-
-
 
 
 .project h2, .project p {
@@ -527,12 +597,11 @@ section {
 --*/
 
 img#about-photo {
-	width: 250px;
-	margin-top: 23px;
+	width: 100%;
 }
 
-#about .container {
-	margin: 5% auto;
+#about {
+	padding: 10% 0;
 }
 
 .about-text {
@@ -570,14 +639,22 @@ img#about-photo {
     color: white;
 }
 
-#social-links .background {
-	margin: 0;
-  width: 100vw;
+#social-links {
+	background-image: url("../images/hero-background.jpg");
+  background-position: top;
+  text-align: center;
+  padding: 4% 0;
 }
 
 #social-links h2 {
-  padding: 0 4%;
+  font-size: 3em;
+  color: #fff; ;
+  margin: 3.5% 0;
+}
 
+#social-links p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px
 }
 
 #social-links .section-title span{
@@ -587,7 +664,7 @@ img#about-photo {
 #social-links ul {
 	text-align: center;
     list-style: none;
-    margin: 60px auto;
+    margin: 40px auto;
     padding: 0;
 }
 
@@ -602,12 +679,15 @@ img#about-photo {
 }
 
 #social-links a {
-	text-decoration: none;
-    height: 70px;
-    font-family: "Muli", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    color: #8b8c9a;
-
+  text-decoration: none;
+  height: 70px;
+  font-family: "Muli", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #social-links a:hover{
@@ -631,31 +711,6 @@ footer p{
     transform: translate(-50%, -50%);
 }
 
-
-
-
-
-/*----grey hover project background--
-.project:hover {
-	height: 500px;
-    background-color: #f8f8f8;
-}
--*/
-
-#splash {
-    background-image: url("../images/splash01.png");
-    background-repeat: no-repeat;  
-    background-size: contain;
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 90%;
-    top: -7%;
-    left: 20%;
-}
-
-#RentApp:hover h2 {color: pink; }
-
 .about p {
 	text-align:left;
 }
@@ -665,57 +720,48 @@ img.about-photo {
 }
 
 
-
-
-/*----- mobile -----*/
-
-@media only screen and (max-width: 480px) {
-    
-    #splash {
-		height: 60%;
-		width: 100%;
-		top: 55%;
-		left: 0%;
-	}
-}
-
-/*----------- pink background/red text---
-
-.project-title a {
-  background: linear-gradient(to right, #fff 50%, rgba(255, 0, 0, 0.2) 50%);
-  background-position: -0% 0;
-  background-size: 200% auto;
-  color: #33347;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background-position 0.3s ease-out;
-}
-.project-title a:hover {
-  background-position: -99.99% 0;
-  color: red;
-}
--------*/
 /*----------- Case Study -----------*/
 
 .case-hero {
-	width: 100%;
-	background-color: #fff;
-	background-size: cover;
-	background-image: url("../images/splash01.png");
-	background-repeat: no-repeat; 
-    background-size: 75%;
-    background-position: 80% 50%;
+  width: 100%;
+  background-color: #fff;
+  background-size: cover;
+  background-image: url(../images/case-background.png);
+  background-repeat: no-repeat;
+}
+
+.case-hero .main-nav a {
+  color: #a2a2a2;
+}
+
+.case-hero .main-nav a:hover {
+  color: #333447;
+}
+
+
+.case-hero .main-nav a::before,
+.case-hero .main-nav a::after {
+    background: #333447;
+
+}
+
+.case-hero .left-border {
+  padding-top: 10%;
+  padding-left: 10%;
 }
 
 .case-title {
     width: 600px;
     text-align: center;
-    margin: 2% auto 5%;
+    margin: 0 auto;
+    padding-top: 2%;
+    clear: both;
 }
 
 .case-title h1{
 	font-size: 3.8em;
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
 }
 
 .case-title p {
@@ -727,7 +773,7 @@ img.about-photo {
 
 .hero-box {
 	margin: 5% auto;
-	width: 80%;
+	width: 72%;
 }
 
 .hero-box:after {
@@ -737,28 +783,37 @@ img.about-photo {
 }
 
 .case-about {
-    width: 40%;
+    width: 43%;
     min-width: 100px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
     float: left;
+    background-image: url(../images/01.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
 }
 
 .case-about h4 {
-	margin: 0;
+    font-size: 1.4em;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #333447;
+    text-transform: uppercase;	margin: 0;
 }
 
 .case-about p {
-	margin: 10px 0 0;
-    font-size: 1.3em;
+    margin: 10px 0 0;
+    font-size: 1.2em;
     font-weight: 500;
     line-height: 1.85;
-    color: #4A4A4A;
+    color: #4c4b4b;
 }
 
 .case-hero img { 
 	float: right;
-    width: 50%;
-    max-width: 600px;
+  width: 53%;
+  max-width: 600px;
+  margin-top: 4%;
 }
 
 .case-hero:after {
@@ -786,7 +841,7 @@ img.about-photo {
 }
 
 .intro .detail {
-	vertical-align: middle;
+	 vertical-align: middle;
     display: inline-block;
     width: 29%; /*--250px?--*/
     text-align: left;
@@ -1030,19 +1085,19 @@ p.bold {
 
 @media only screen and (max-width: 846px) {
 
-    .case-hero img {
-    	width: 85%;
-    	display: block;
-    	float: none;
-    	margin: 0 auto;
+  .case-hero img {
+  	width: 100%;
+  	display: block;
+  	float: none;
+  	margin: 0 auto;
 	}
 
-    .case-hero .left-border {
-		width: 100%;
-    	margin: auto;
-    	padding-left: 0%;
-    	font-size: 0.85rem;
-    	border: none;
+  .case-hero .left-border {
+	  width: 100%;
+  	margin: auto;
+  	padding-left: 0%;
+  	font-size: 0.85em;
+  	border: none;
 	}
 	
 	.case-about {
@@ -1050,10 +1105,6 @@ p.bold {
 		margin: 0 auto;
 		margin-top: -8%;
 		float: none;
-	}
-
-	.hero-box {
-		background-position: 50% 10%; 
 	}
 
 	.intro .center {
@@ -1074,9 +1125,13 @@ p.bold {
 
 @media only screen and (max-width: 720px) {
 
-	.project{
+	.project {
 		margin: 10% auto;
 	}
+
+  .project-info {
+    background-size: 30%;
+  }
 
 	.case-title {
 		width: 80%;
@@ -1110,10 +1165,55 @@ p.bold {
 
 }
 
+
+@media only screen and (min-width: 540px) and (max-width: 846px) {
+
+  .hero-intro {
+    text-align: left;
+    width: 70%;
+    min-width: 320px;
+    margin: 0;
+    top: 52%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-60%, -55%);
+  }
+
+  .hero-into h1 {
+
+  }
+}
+
+
 @media only screen and (max-width: 540px) {
+
+  .hero-box {
+    width: 80%;
+  }
+
+  .hero-intro {
+    text-align: left;
+    width: 70%;
+    min-width: 320px;
+    margin: 0;
+    top: 14%;
+    left: 10%;
+    position: absolute;
+    transform: translate(0%, 0%); 
+  }
+
+  .hero-intro h1 {
+    font-size: 2em;
+  }
+
+  .vertical-logo {
+    width: 20px;
+    margin-bottom: 40px;
+  }
 
 	.case-title {
 		margin-bottom: 10%;
+    width: 90%;
 	}
 
 	.case-title h1 {
@@ -1142,6 +1242,7 @@ p.bold {
 	.main-nav li{
 		margin: 10px 10px;
 	}
+
 
 
 }
