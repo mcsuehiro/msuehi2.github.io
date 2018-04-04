@@ -920,8 +920,8 @@ img.about-photo {
 }
 
 
-main h2 {
-  	font-family: 'Muli', sans-serif;	
+main.case h2 {
+  font-family: 'Helvetica Neue', sans-serif;	
 	font-size: 2.5em;
 	margin: 5% auto;
 	border-left: 3px solid pink;
@@ -929,9 +929,8 @@ main h2 {
 	height: 100%;
 }
 
-main h3 {
+main.case h3 {
     margin: 4% 0;	
-	  text-align: left;
 	  font-size: 1.25em;
   	font-family: 'Muli', sans-serif;
   	font-weight: 600;
@@ -940,9 +939,9 @@ main h3 {
 
 }
 
-main h3.underline {
-	text-align: center;
-	font-size: 1.25em;
+main.case h3.underline {
+	 text-align: center;
+	 font-size: 1.25em;
   	font-family: 'Muli', sans-serif;
   	font-weight: 400;
   	letter-spacing: 0.1em;
@@ -972,9 +971,9 @@ img#ra-ux-newflow {
 	margin-top: 0;
 }
 
-main h3.underline:after{
+main.case h3.underline:after{
     background: none repeat scroll 0 0 #dadada;
-	bottom: -10px;
+	 bottom: -10px;
     content: "";
     display: block;
     height: 1px;
@@ -984,7 +983,7 @@ main h3.underline:after{
     margin-bottom: 30px;
  }
 
-main img {
+main.case img {
 	max-width: 100%;
     height: auto;
     margin: 3.5% auto;
@@ -1098,7 +1097,7 @@ h4.bold-p{
   margin: 0;
 }
 
-img.lightbulb {
+main.case img.lightbulb {
 	width: 60px;
 	margin-top:30px;
 }
