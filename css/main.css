@@ -88,6 +88,13 @@ a {
 	font-weight: 400;
 	color: #333447;
 }
+
+#shopify-b2b-case a {
+	color: #006FCF;
+  font-weight: 800;
+  text-decoration: underline;
+  font-family: 'Muli', sans-serif;
+}
 /*---
 
 h1, h2 {
@@ -472,16 +479,36 @@ section {
 	max-width: 300px;
 }
 
-/*--RentApp UX colors--*/
+/*--Shopify B2B colors--*/
 
 
 
-#rentapp-ux .project-info {
+#shopify-ux .project-info {
 	background-image: url("../images/01.png");
 }
 
 #rentapp-ux .case-about {
   background-image: url(../images/01.png);
+}
+
+/*
+#rentapp-ux .left-border {
+	border-color: #E2E2FF;
+}
+*/
+
+
+
+/*--RentApp UX colors--*/
+
+
+
+#rentapp-ux .project-info {
+	background-image: url("../images/02.png");
+}
+
+#rentapp-ux .case-about {
+  background-image: url(../images/02.png);
 }
 
 /*
@@ -501,11 +528,11 @@ section {
 /*--RentApp UI colors--*/
 
 #rentapp-ui .project-info {
-  background-image: url("../images/02.png");
+  background-image: url("../images/03.png");
 }
 
 #rentapp-ui .case-about {
-  background-image: url(../images/02.png);
+  background-image: url(../images/03.png);
 }
 
 /*
@@ -540,11 +567,11 @@ section {
 
 
 #oranj .project-info {
-  background-image: url("../images/03.png");
+  background-image: url("../images/04.png");
 }
 
 #oranj .case-about {
-  background-image: url(../images/03.png);
+  background-image: url(../images/04.png);
 }
 
 /*
@@ -566,7 +593,7 @@ section {
 
 #localguide .project-img img{
   max-width: 330px;
-   margin-top: -40px;
+  margin-top: -40px;
 }
 
 #localguide .project-info {
@@ -858,6 +885,19 @@ img.about-photo {
   width: 53%;
   max-width: 600px;
   margin-top: 4%;
+}
+
+.shopify-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.case-hero .shopify img { 
+  width: 100%;
+  max-width: 600px;
+  margin-top: -7%;
 }
 
 .case-hero:after {
