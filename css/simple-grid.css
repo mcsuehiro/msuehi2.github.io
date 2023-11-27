@@ -57,7 +57,7 @@ h6 {
   color: #333447;
 }
 
-p {
+p, li, a {
   font-size: 1.125rem;
   font-weight: 200;
   line-height: 1.8;

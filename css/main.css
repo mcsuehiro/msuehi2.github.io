@@ -95,6 +95,7 @@ a {
   text-decoration: underline;
   font-family: 'Lato', 'Inter', sans-serif;
 }
+
 /*---
 
 h1, h2 {
@@ -117,10 +118,11 @@ h4 {
 	text-transform: uppercase;
 }
 
-p {
+p, ul, li {
 	font-family: 'Lato', sans-serif;
   font-weight: 300
 }
+
 
 .main-nav {
     height: 100px;
@@ -955,12 +957,18 @@ img.about-photo {
 	line-height: 1.3;
 }
 
-.background {
+.gray-background {
 	background-color: #f8f8f8;
 	padding: 4% 0;
 	margin: 4% 0;
 	border-top: .5px solid #efefef;
 	border-bottom: .5px solid #efefef;
+}
+
+.section-highlight-background {
+  background-color: #DFE6F4;
+  padding: 4%;
+  border-radius: 7px;
 }
 
 
@@ -1174,6 +1182,10 @@ p.bold {
  /*-- margin-bottom: -15px;	 what is this for? --*/ 
 }
 
+strong {
+  font-weight: bold;  
+}
+
 .next-project .image {
   background: url("../images/hero-background.jpg");
   opacity: 0;
@@ -1197,6 +1209,14 @@ p.bold {
   z-index: 1;
 }
 
+/*----- For the iframe videos ------*/
+@media (min-width: 768px) {
+  /* Styles for screens 768px and larger (e.g., desktop) */
+  iframe {
+    width: 640px; /* Set width for desktop view */
+    height: 360px; /* Set height for desktop view */
+  }
+}
 
 /*----- mobile 846 ------*/
 
@@ -1237,6 +1257,12 @@ p.bold {
 	.detail:first-of-type {
     	margin-top: 0;
 	}
+
+/*----- For the iframe video------*/
+  iframe {
+    width: 100%; /* Set width to 100% for mobile view */
+    height: 200px; /* Set height for mobile view */
+  }
 
 }
 
