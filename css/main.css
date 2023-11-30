@@ -848,7 +848,7 @@ img.about-photo {
 }
 
 .case-title h1 {
-  font-family: 'Inter', 'Lato', sans-serif;
+  font-family: 'Helvetica Neue', 'Inter', 'Lato', sans-serif;
   font-weight: 500;
   font-size: 4em;
   margin: 10px auto;
@@ -884,7 +884,7 @@ img.about-photo {
 
 .case-about h4 {
     font-size: 1.4em;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', 'Inter', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     letter-spacing: 0.1em;
     color: #333447;
@@ -894,7 +894,7 @@ img.about-photo {
 .case-about p {
     margin: 10px 0 0;
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.85;
     color: #4c4b4b;
 }
@@ -1384,7 +1384,7 @@ strong {
 		line-height: 1.2;
 	}
 
-	main h2, .project-title, #social-links h2 {
+	main h2, .project-title, social-links h2 {
 		font-size: 2em;
 		line-height: 1.2;
 		border: none;
