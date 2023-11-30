@@ -484,7 +484,9 @@ section {
   padding: 3% 0 3% 0;
 }
 
-/*--Shopify B2B colors--*/
+/*--------- Specific case study colors ----------*/
+
+/*--Shopify B2B colors & background images--*/
 
 
 
@@ -492,7 +494,7 @@ section {
 	background-image: url("../images/01.png");
 }
 
-#rentapp-ux .case-about {
+#shopify-ux .case-about {
   background-image: url(../images/01.png);
 }
 
@@ -503,17 +505,27 @@ section {
 */
 
 
+/*--Handshake Hub colors & background images--*/
 
-/*--RentApp UX colors--*/
-
-
-
-#rentapp-ux .project-info {
+#handshake-redesign .project-info {
 	background-image: url("../images/02.png");
 }
 
-#rentapp-ux .case-about {
+#handshake-redesign .case-about {
   background-image: url(../images/02.png);
+}
+
+
+
+/*--RentApp UX colors & background images--*/
+
+
+#rentapp-ux .project-info {
+	background-image: url("../images/03.png");
+}
+
+#rentapp-ux .case-about {
+  background-image: url(../images/03.png);
 }
 
 /*
@@ -530,14 +542,14 @@ section {
 	border-color: #E2E2FF;
 }
 
-/*--RentApp UI colors--*/
+/*--RentApp UI colors & background images--*/
 
 #rentapp-ui .project-info {
-  background-image: url("../images/03.png");
+  background-image: url("../images/04.png");
 }
 
 #rentapp-ui .case-about {
-  background-image: url(../images/03.png);
+  background-image: url(../images/04.png);
 }
 
 /*
@@ -567,16 +579,16 @@ section {
 
 
 
-/*--Oranj colors--*/
+/*--Oranj colors & background images--*/
 
 
 
 #oranj .project-info {
-  background-image: url("../images/04.png");
+  background-image: url("../images/05.png");
 }
 
 #oranj .case-about {
-  background-image: url(../images/04.png);
+  background-image: url(../images/05.png);
 }
 
 /*
@@ -680,16 +692,17 @@ img#about-photo {
 }
 
 .about-text {
-	margin-left: 30px;
+	margin-left: 30px ;
 }
 
 .about-text h2 {
-	margin: 0;
+	margin: 3% auto;
 }
+
 
 /*--resume button--*/
 .button-resume {
-    margin: 2% auto;
+    margin: 3% auto;
   	font-family: 'Lato', sans-serif;
   	font-weight: 500;
   	font-size: .8em;
@@ -715,8 +728,8 @@ img#about-photo {
 }
 
 #social-links {
-	background-image: url("../images/hero-background.jpg");
-  background-position: top;
+	background-image: url("../images/hero-background-2.jpg");
+  background-position: center;
   text-align: center;
   padding: 4% 0;
 }
@@ -1299,9 +1312,6 @@ strong {
     margin: 0 20px;
   }
 
-	.button-resume {
-	   margin: 0 auto;
-	}
 
 	#oranj-ideate p, #oranj-ideate h4 {
     padding-left: 0;
@@ -1374,7 +1384,7 @@ strong {
 		line-height: 1.2;
 	}
 
-	main h2, .project-title {
+	main h2, .project-title, #social-links h2 {
 		font-size: 2em;
 		line-height: 1.2;
 		border: none;
