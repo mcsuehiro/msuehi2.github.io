@@ -420,11 +420,11 @@ section {
 }
 
 #work .project:first-of-type {
-	margin-top: 0;
+	margin-top: 10%;
 }
 
 #work .project:last-of-type {
-	margin-bottom: 0;
+	margin-bottom: 10%;
 }
 
 .project-info {
@@ -459,7 +459,7 @@ section {
 
 
 .project .row {
-	padding-top: 20%;
+	padding-top: 15%;
 /*
 	background-image: url("../images/splash01.png");
 	background-repeat: no-repeat; 
@@ -696,7 +696,13 @@ img#about-photo {
 }
 
 .about-text h2 {
-	margin: 3% auto;
+	margin-bottom: 3%;
+}
+
+.about-text p, a {
+  font-size: 1.125rem;
+  margin: 2% auto;
+  line-height: 1.6;
 }
 
 
@@ -988,8 +994,12 @@ img.about-photo {
 main.case h2 {
   font-family: 'Helvetica Neue', sans-serif;	
 	font-size: 2.5em;
-	margin: 5% auto;
+	margin-bottom: 2%;
 	height: 100%;
+}
+
+main.case .row {
+  margin: 5% auto;
 }
 
 
@@ -1059,6 +1069,7 @@ main.case img {
     height: auto;
     margin: 3.5% auto;
 }
+
 
 .big-quote {
 	font-size: 1.35em;
