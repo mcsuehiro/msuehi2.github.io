@@ -458,19 +458,6 @@ section {
 	background-size: contain;
 }
 
-
-.project .row {
-
-/*
-	padding-top: 15%;
-	background-image: url("../images/splash01.png");
-	background-repeat: no-repeat; 
-  background-size: 80%;
-  background-position: 60% -50%;
-*/
-}
-
-
 main.case .row:first-of-type {
 	margin-top: 10%;
 }
@@ -887,7 +874,7 @@ img.about-photo {
 }
 
 .case-about {
-    width: 43%;
+    width: 70%;
     min-width: 100px;
     /* margin-right: 50px; */
     float: left;
@@ -1058,6 +1045,12 @@ img#ra-old-mobile {
 
 img#ra-ux-newflow {
 	margin-top: 0;
+}
+
+
+.dropshadow-radius {
+  border-radius: 7px;
+  box-shadow: 0 0 50px rgba(0, 0, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
 main.case h3.underline:after{
@@ -1261,7 +1254,7 @@ strong {
   }
 
   .case-about {
-    background-size: 40%;
+    background-size: 50%;
   }
 
 }
