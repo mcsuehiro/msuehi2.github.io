@@ -415,12 +415,13 @@ section {
 
 
 .project {
-	margin: 0;
+	margin: 20% auto;
   position: relative;
+  height: 550px;
 }
 
 #work .project:first-of-type {
-	margin-top: 10%;
+	margin-top: 30%;
 }
 
 #work .project:last-of-type {
@@ -459,8 +460,9 @@ section {
 
 
 .project .row {
-	padding-top: 15%;
+
 /*
+	padding-top: 15%;
 	background-image: url("../images/splash01.png");
 	background-repeat: no-repeat; 
   background-size: 80%;
