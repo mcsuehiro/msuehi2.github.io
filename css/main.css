@@ -469,6 +469,14 @@ section {
 }
 
 
+main.case .row:first-of-type {
+	margin-top: 10%;
+}
+
+main.case .row:last-of-type {
+	margin-bottom: 10%;
+}
+
 .project h2, .project p {
 	-webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -476,8 +484,6 @@ section {
     transition: all 0.4s;
 }
 
-.project .row:hover p {color: #8B8C9A;}
-.project .row :hover h2 {color: #8B8C9A;}
 
 .project p {
 	max-width: 300px;
@@ -888,6 +894,7 @@ img.about-photo {
     background-repeat: no-repeat;
 }
 
+
 .case-about h4 {
     font-size: 1.4em;
     font-family: 'Lato', 'Inter', 'Helvetica Neue', sans-serif;
@@ -994,14 +1001,13 @@ img.about-photo {
 main.case h2 {
   font-family: 'Helvetica Neue', sans-serif;	
 	font-size: 2.5em;
-	margin-bottom: 2%;
+	margin-bottom: 4%;
 	height: 100%;
 }
 
 main.case .row {
   margin: 5% auto;
 }
-
 
 /*---- left border that you removed:
 
@@ -1242,6 +1248,24 @@ strong {
   }
 }
 
+
+
+
+/*----- Styles for screens wider than 1440px ------*/
+
+@media only screen and (min-width: 1441px) {
+  .hero-box {
+    width: 50%;
+  }
+
+  .case-about {
+    background-size: 40%;
+  }
+
+}
+
+
+
 /*----- mobile 846 ------*/
 
 @media only screen and (max-width: 846px) {
@@ -1266,6 +1290,7 @@ strong {
 		margin: 0 auto;
 		margin-top: -8%;
 		float: none;
+    background-size: 40%;
 	}
 
 	.intro .center {
@@ -1396,15 +1421,19 @@ strong {
 	}
 
 	main h2, .project-title, social-links h2 {
-		font-size: 2em;
+		font-size: 2.5em;
 		line-height: 1.2;
 		border: none;
 		padding: 0;
 	}
 
+
+
 	.main-nav li{
 		margin: 10px 10px;
 	}
+
+  
 
 }
 
