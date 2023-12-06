@@ -865,6 +865,7 @@ img.about-photo {
 .hero-box {
 	margin: 5% auto;
 	width: 72%;
+  max-width: 1000px;
 }
 
 .hero-box:after {
@@ -1249,9 +1250,6 @@ strong {
 /*----- Styles for screens wider than 1440px ------*/
 
 @media only screen and (min-width: 1441px) {
-  .hero-box {
-    width: 50%;
-  }
 
   .case-about {
     background-size: 50%;
