@@ -982,9 +982,11 @@ img.about-photo {
 }
 
 .section-highlight-background {
-  background-color: #DFE6F4;
+  background-color: #f1f5fe;
   padding: 4%;
   border-radius: 7px;
+  
+  
 }
 
 
