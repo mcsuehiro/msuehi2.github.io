@@ -441,9 +441,9 @@ section {
 }
 
 .project-title {
-  font-size: 3em;
+  font-size: 3.6em;
 	margin: 0;
-  padding-top: 10%;
+  padding-top: 14%;
 }
 
 
@@ -475,8 +475,9 @@ main.case .row:last-of-type {
 
 
 .project p {
-	max-width: 300px;
+	max-width: 350px;
   padding: 3% 0 3% 0;
+  font-size: 1.2em
 }
 
 /*--------- Specific case study colors ----------*/
