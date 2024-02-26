@@ -511,6 +511,11 @@ main.case .row:last-of-type {
   background-image: url(../images/02.png);
 }
 
+#handshake-redesign .project-img {
+  padding-left: 10px;
+}
+
+
 
 
 /*--RentApp UX colors & background images--*/
@@ -684,7 +689,7 @@ img#about-photo {
 }
 
 #about {
-	padding: 5% 0;
+	padding: 10% 0;
 }
 
 .about-text {
@@ -737,9 +742,9 @@ img#about-photo {
 }
 
 #social-links h2 {
-  font-size: 3em;
+  font-size: 2.3em;
   color: #fff; ;
-  margin: 3.5% 0;
+  margin: 5% 0;
 }
 
 #social-links p{
@@ -1316,7 +1321,8 @@ strong {
 @media only screen and (max-width: 720px) {
 
 	.project {
-		margin: 10% auto;
+    padding: 10% 0;
+    height: fit-content;
 	}
 
   .project-info {
@@ -1328,7 +1334,7 @@ strong {
 	}
 
 	.mobile-divider-line {
-		display: block;
+		display: none;
 	}
 
 	.line {
